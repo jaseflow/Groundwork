@@ -136,17 +136,3 @@
     filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@startColor,@endColor)); // IE9 and down
   }
 }
-
-// Placeholder text
-// -------------------------
-.placeholder(@color: @placeholderText) {
-  &:-moz-placeholder {
-    color: @color;
-  }
-  &:-ms-input-placeholder {
-    color: @color;
-  }
-  &::-webkit-input-placeholder {
-    color: @color;
-  }
-}
