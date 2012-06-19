@@ -1,0 +1,102 @@
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family: @headings-font;
+	font-weight: @headings-weight;
+	color: @headings-color;
+	text-rendering: optimizelegibility;
+}
+
+h1 small, 
+h2 small {
+	font-weight: normal;
+	color: @grey-light;
+}
+
+h1,
+.alpha { 
+	margin-bottom: @base-line / 2;
+	.font-size(32);
+	line-height: 1.2;
+}
+
+h2,
+.beta { 
+	margin-bottom : @base-line / 2;
+	.font-size(24);
+	line-height: 1.2;
+}
+
+h3,
+.charlie { 
+	margin-bottom: @base-line / 1.5;
+	.font-size(21);
+	line-height: 1.3;
+}
+
+h4,
+.delta { 
+	margin-bottom: @base-line;
+	.font-size(18);
+	line-height: 1.25;
+}
+
+h5,
+.echo { 
+	.font-size(16);
+	margin-bottom: @base-line;
+}
+
+h6,
+.milli { 
+	margin-bottom: @base-line;
+	.font-size(14); 
+	font-weight: normal;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+// TYPOGRAPHY
+
+p, 
+ol, 
+ul, 
+dl, 
+address { 
+	margin-bottom: @base-line; 
+}
+
+small { 
+	.font-size(14);
+}
+
+ul, 
+ol { 
+	margin: 0 0 @base-line; 
+}
+
+li ul, 
+li ol { 
+	margin: 0;
+	.font-size(16);
+}
+
+// definition lists
+
+dl, 
+dd { 
+	margin-bottom: @base-line;
+}
+
+dt { 
+	font-weight: bold;
+}
+
+// text-level
+
+b, strong { 
+	font-weight: bold;
+}

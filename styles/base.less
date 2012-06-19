@@ -1,0 +1,26 @@
+
+html,body {
+	height: 100%; // A must have for full 100% height divs
+}
+
+html {
+	overflow-y: scroll;
+	font-size: 62.5%; // This is needed for the font-size mixin to work
+}
+
+body {
+	line-height: @base-line;
+	font-family: @base-font;
+	color: @base-color;
+	font-size: @font-size;
+	background: @site-bg;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+table {
+	width: 100%;
+}

@@ -1,0 +1,361 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  overflow-y: scroll;
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.65em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #555555;
+  font-size: 16px;
+  background: #ffffff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+table {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: bold;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+h1 small,
+h2 small {
+  font-weight: normal;
+  color: #999999;
+}
+h1,
+.alpha {
+  margin-bottom: 0.825em;
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 1.2;
+}
+h2,
+.beta {
+  margin-bottom: 0.825em;
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+h3,
+.charlie {
+  margin-bottom: 1.0999999999999999em;
+  font-size: 21px;
+  font-size: 2.1rem;
+  line-height: 1.3;
+}
+h4,
+.delta {
+  margin-bottom: 1.65em;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.25;
+}
+h5,
+.echo {
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin-bottom: 1.65em;
+}
+h6,
+.milli {
+  margin-bottom: 1.65em;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+p,
+ol,
+ul,
+dl,
+address {
+  margin-bottom: 1.65em;
+}
+small {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+ul,
+ol {
+  margin: 0 0 1.65em;
+}
+li ul,
+li ol {
+  margin: 0;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+dl,
+dd {
+  margin-bottom: 1.65em;
+}
+dt {
+  font-weight: bold;
+}
+b,
+strong {
+  font-weight: bold;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+/* For modern browsers */
+.media:before,
+.media:after,
+.island:before,
+.island:after,
+.islet:before,
+.islet:after,
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.media:after,
+.island:after,
+.islet:after,
+.cf:after {
+  clear: both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+  *zoom: 1;
+}
+.island,
+.islet {
+  display: block;
+}
+.island {
+  padding: 20px;
+}
+.islet {
+  padding: 10px;
+}
+.island:last-child,
+.islet:last-child {
+  margin-bottom: 0;
+}
+.media {
+  display: block;
+}
+.media-img {
+  float: left;
+  margin-right: 10px;
+}
+.media-img-rev {
+  float: right;
+  margin-left: 10px;
+}
+.media-img img {
+  display: block;
+}
+.media-body {
+  overflow: hidden;
+}
+.media-body:last-child {
+  margin-bottom: 0;
+}
+.islet .media-img {
+  margin-right: 5px;
+}
+.islet .media-img-rev {
+  margin-right: 5px;
+}
+.nav {
+  list-style: none;
+  margin-left: 0;
+}
+.nav li {
+  display: inline;
+}
+.nav a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+.btn {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  background-color: #00a1f5;
+  background-image: -moz-linear-gradient(top, #00a8ff, #0097e6);
+  background-image: -ms-linear-gradient(top, #00a8ff, #0097e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00a8ff), to(#0097e6));
+  background-image: -webkit-linear-gradient(top, #00a8ff, #0097e6);
+  background-image: -o-linear-gradient(top, #00a8ff, #0097e6);
+  background-image: linear-gradient(top, #00a8ff, #0097e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00a8ff', endColorstr='#0097e6', GradientType=0);
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  padding: 0 0.625em;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #0086cc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
