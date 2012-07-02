@@ -1,4 +1,7 @@
 
+// Scaffolding
+// -------------------------
+
 html,body {
 	height: 100%; // A must have for full 100% height divs
 }
@@ -16,6 +19,20 @@ body {
 	background: @site-bg;
 }
 
+// Links
+// -------------------------
+
+a {
+	color: @link-color;
+	text-decoration: none;
+	&:hover {
+		color: @link-color-hover;
+	}
+}
+
+// Base styles
+// -------------------------
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -23,4 +40,12 @@ img {
 
 table {
 	width: 100%;
+}
+
+// Grid shit
+// -------------------------
+
+.container {
+	width: 65%;
+	margin: 0 auto;
 }

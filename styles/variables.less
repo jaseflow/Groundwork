@@ -15,7 +15,7 @@
 // Accent
 
 @red:                        #ff0000;
-@blue:                       #00a8ff;
+@blue:                       #08c;
 @yellow:                     #ffde00;
 @orange:                     #ff7800;
 @green:                      #2dda1b;
@@ -25,25 +25,33 @@
 
 @font-size:                  16px;
 @base-line:                  1.65em;
-@base-font:                  'Helvetica Neue', Helvetica, Arial, sans-serif;
+@base-font:                  "proxima-nova-1","proxima-nova-2", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 @alt-font:                   Cambria, Georgia, Times, 'Times New Roman';          
 @base-color:                 @grey;
-@headings-font:              inherit;
+@headings-font:              "nimbus-sans-1","nimbus-sans-2",sans-serif;
 @headings-weight:            bold;
 @headings-color:             inherit;
+
+@link-color:                 @blue;
+@link-color-hover:           darken(@link-color,5);
 
 // Base
 // -------------------------
 
-@site-bg:                    @white;
+@site-bg:                    darken(@white,2)	;
 
 // Buttons
 
-@btn-bg-top-color:           @blue;
+@btn-bg-top-color:           darken(@white,10);
 @btn-bg-btm-color:           darken(@btn-bg-top-color,5);
 @btn-border-color:           darken(@btn-bg-top-color,10);
 @btn-border-width:           1px;
 @btn-border-style:           solid;
-@btn-color:                  @white;
+@btn-color:                  @grey;
 @btn-shadow-inner:           inset 0 1px 1px rgba(255,255,255,0.8);
 @btn-border-radius:          2px;
+
+// Textures
+// -------------------------
+
+@noise-bg:                  url(img/noise.png);

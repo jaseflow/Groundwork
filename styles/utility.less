@@ -10,7 +10,7 @@
 	float: right;
 }
 
-// Clearfix
+// Clearfix and commonly cleared classes
 // -------------------------
 
 /* For modern browsers */
@@ -71,12 +71,12 @@
 
 .media-img {
 	float: left;
-	margin-right: 10px;
+	margin-right: 1.25em;
 }
 
 .media-img-rev {
 	float: right;
-	margin-left: 10px;
+	margin-left: 1.25em;
 }
 
 .media-img img {
@@ -100,7 +100,7 @@
 	margin-right: 5px;
 }
 
-// Nav abstraction
+// Nav abstractions
 // -------------------------
 
 .nav {
@@ -108,11 +108,16 @@
 	margin-left: 0;
 }
 
-.nav li {
-	display: inline;
-}
-
+.nav li,
 .nav a {
 	display: inline-block;
 	.ib();
+}
+
+.stacked li {
+	display: list-item;
+}
+
+.stacked a {
+	display: block;
 }

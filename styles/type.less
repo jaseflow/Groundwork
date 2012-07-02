@@ -16,24 +16,31 @@ h2 small {
 	color: @grey-light;
 }
 
+.mega {
+	margin-bottom: @base-line / 2;
+	.font-size(64);
+	line-height: 1.5;
+}
+
+
 h1,
 .alpha { 
-	margin-bottom: @base-line / 2;
-	.font-size(32);
+	margin-bottom: @base-line / 4;
+	.font-size(44);
 	line-height: 1.2;
 }
 
 h2,
 .beta { 
-	margin-bottom : @base-line / 2;
-	.font-size(24);
+	margin-bottom : @base-line / 4;
+	.font-size(28);
 	line-height: 1.2;
 }
 
 h3,
 .charlie { 
-	margin-bottom: @base-line / 1.5;
-	.font-size(21);
+	margin-bottom: @base-line / 4;
+	.font-size(24);
 	line-height: 1.3;
 }
 
@@ -59,6 +66,14 @@ h6,
 	text-transform: uppercase;
 }
 
+.flat {
+	margin-bottom: 0;
+}
+
+.subheading {
+	font-weight: normal;
+}
+
 // TYPOGRAPHY
 
 p, 
@@ -70,7 +85,7 @@ address {
 }
 
 small { 
-	.font-size(14);
+	font-size: 0.4em;
 }
 
 ul, 
