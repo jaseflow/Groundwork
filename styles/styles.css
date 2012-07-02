@@ -1178,8 +1178,11 @@ ul.icons li .icon-large:before {
 }
 .hero-title {
   background-color: #f2f2f2;
+  -webkit-box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.03);
+  box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.03);
   line-height: 1.5;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #dedede;
 }
 .hero-text {
   color: #999999;
