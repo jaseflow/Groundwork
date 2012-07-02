@@ -1174,9 +1174,6 @@ ul.icons li .icon-large:before {
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
-  -webkit-border-radius: 5px 5px 0 0;
-  -moz-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
   overflow: hidden;
 }
 .hero-title {
