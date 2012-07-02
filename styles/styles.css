@@ -153,6 +153,8 @@ body {
   font-size: 16px;
   background: #3b3b3b;
   padding-top: 1.65em;
+  background-image: url(img/dark_brick_wall.png);
+  background-repeat: repeat;
 }
 a {
   color: #0088cc;
@@ -1211,7 +1213,6 @@ ul.icons li .icon-large:before {
   background-image: url(img/white_brick_wall.png);
   background-repeat: repeat;
   margin-bottom: 1.65em;
-  border-top: 1px solid #ffffff;
 }
 .feature-wrap:before,
 .feature-wrap:after {
