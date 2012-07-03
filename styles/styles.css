@@ -171,8 +171,9 @@ table {
   width: 100%;
 }
 .container {
-  width: 65%;
+  width: 95%;
   margin: 0 auto;
+  max-width: 960px;
 }
 h1,
 h2,
@@ -1183,6 +1184,7 @@ ul.icons li .icon-large:before {
   box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.03);
   line-height: 1.5;
   border: 1px solid #dedede;
+  color: #999999;
 }
 .hero-text {
   color: #999999;
@@ -1212,7 +1214,6 @@ ul.icons li .icon-large:before {
   *zoom: 1;
   background-image: url(img/white_brick_wall.png);
   background-repeat: repeat;
-  margin-bottom: 1.65em;
 }
 .feature-wrap:before,
 .feature-wrap:after {
