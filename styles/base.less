@@ -17,24 +17,10 @@ body {
 	font-weight: @base-weight;
 	color: @base-color;
 	font-size: @font-size;
-	background: @site-bg;
-	padding-top: @base-line;
-	background-image: url(img/dark_brick_wall.png);
-	background-repeat: repeat;
+	background-color: @site-bg;
 }
 
-// Links
-// -------------------------
-
-a {
-	color: @link-color;
-	text-decoration: none;
-	&:hover {
-		color: @link-color-hover;
-	}
-}
-
-// Base styles
+// Soft resets
 // -------------------------
 
 img {
@@ -44,13 +30,4 @@ img {
 
 table {
 	width: 100%;
-}
-
-// Grid shit
-// -------------------------
-
-.container {
-	width: 95%;
-	margin: 0 auto;
-	max-width: 960px;
 }

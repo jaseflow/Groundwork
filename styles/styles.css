@@ -151,10 +151,7 @@ body {
   font-weight: 300;
   color: #555555;
   font-size: 16px;
-  background: #3b3b3b;
-  padding-top: 1.65em;
-  background-image: url(img/dark_brick_wall.png);
-  background-repeat: repeat;
+  background-color: #3b3b3b;
 }
 a {
   color: #0088cc;
@@ -277,34 +274,6 @@ b,
 strong {
   font-weight: bold;
 }
-.left {
-  float: left;
-}
-.right {
-  float: right;
-}
-/* For modern browsers */
-.media:before,
-.media:after,
-.island:before,
-.island:after,
-.islet:before,
-.islet:after,
-.cf:before,
-.cf:after {
-  content: "";
-  display: table;
-}
-.media:after,
-.island:after,
-.islet:after,
-.cf:after {
-  clear: both;
-}
-/* For IE 6/7 (trigger hasLayout) */
-.cf {
-  *zoom: 1;
-}
 .island,
 .islet {
   display: block;
@@ -360,6 +329,46 @@ strong {
 }
 .stacked a {
   display: block;
+}
+.flyout {
+  position: relative;
+}
+.flyout-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.flyout:hover .flyout-content {
+  display: block;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+/* For modern browsers */
+.media:before,
+.media:after,
+.island:before,
+.island:after,
+.islet:before,
+.islet:after,
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.media:after,
+.island:after,
+.islet:after,
+.cf:after {
+  clear: both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+  *zoom: 1;
 }
 .btn {
   display: inline-block;
@@ -1146,24 +1155,6 @@ ul.icons li .icon-large:before {
 }
 .icon-user-md:before {
   content: "\f200";
-}
-.main-nav {
-  text-align: center;
-}
-.main-nav li {
-  padding-left: 0.625em;
-  margin-left: 0.625em;
-  border-left: 1px solid #dddddd;
-}
-.main-nav li:first-child {
-  margin-left: 0;
-  padding-left: 0;
-  border-left: 0;
-}
-.main-nav a {
-  font-size: 22px;
-  font-size: 2.2rem;
-  text-decoration: none;
 }
 .share-bar {
   text-align: center;
