@@ -1,14 +1,3 @@
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-}
-.clearfix:after {
-  clear: both;
-}
 body {
   padding-top: 1.65em;
   background-image: url(img/dark_brick_wall.png);
@@ -37,10 +26,8 @@ body {
   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.15), 1px 1px 1px rgba(255, 255, 255, 0.8);
 }
 .hero-text {
+  padding: 0 1.25em;
   color: #999999;
-  font-size: 24px;
-  font-size: 2.4rem;
-  line-height: 1.5;
 }
 .braces {
   font-weight: bold;
@@ -61,31 +48,22 @@ body {
 }
 .feature-wrap {
   padding-bottom: 1.65em;
-  *zoom: 1;
   background-image: url(img/white_brick_wall.png);
   background-repeat: repeat;
 }
-.feature-wrap:before,
-.feature-wrap:after {
-  display: table;
-  content: "";
-}
-.feature-wrap:after {
-  clear: both;
-}
 .feature-icon {
   background-color: #004466;
-  width: 5em;
-  height: 5em;
-  line-height: 5em;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 1.2;
   position: relative;
   overflow: hidden;
   text-align: center;
 }
 .feature-icon [class*="icon"] {
   color: #ffde00;
-  font-size: 64px;
-  font-size: 6.4rem;
+  font-size: 32px;
+  font-size: 3.2rem;
 }
 .feature-wrap a {
   color: #ffde00;
@@ -136,4 +114,19 @@ body {
 }
 .actions [class*="btn"]:first-child {
   margin-right: 0.625em;
+}
+@media only screen and (max-width: 37.5em) {
+  .actions [class*="btn"] {
+    margin-bottom: 1.65em;
+  }
+  .actions [class*="btn"]:first-child {
+    margin-right: 0;
+  }
+  .btn-primary {
+    display: block;
+  }
+  .features li {
+    width: 100%;
+    margin-left: 0;
+  }
 }
