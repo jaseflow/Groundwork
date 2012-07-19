@@ -198,13 +198,16 @@ table {
   list-style: none;
   margin-left: 0;
 }
-.nav li,
+.nav li {
+  float: left;
+}
 .nav a {
   display: inline-block;
   *display: inline;
   zoom: 1;
 }
 .stacked li {
+  float: none;
   display: list-item;
 }
 .stacked a {
@@ -334,6 +337,8 @@ a {
 a:hover {
   color: #0077b3;
 }
+.nav:before,
+.nav:after,
 .media:before,
 .media:after,
 .island:before,
@@ -345,12 +350,17 @@ a:hover {
   content: "";
   display: table;
 }
+.nav:after,
 .media:after,
 .island:after,
 .islet:after,
 .cf:after {
   clear: both;
 }
+.nav,
+.media,
+.island,
+.islet,
 .cf {
   *zoom: 1;
 }

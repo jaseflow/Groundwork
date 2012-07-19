@@ -1,14 +1,3 @@
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-}
-.clearfix:after {
-  clear: both;
-}
 body {
   padding-top: 1.65em;
   background-image: url(img/dark_brick_wall.png);
@@ -61,17 +50,8 @@ body {
 }
 .feature-wrap {
   padding-bottom: 1.65em;
-  *zoom: 1;
   background-image: url(img/white_brick_wall.png);
   background-repeat: repeat;
-}
-.feature-wrap:before,
-.feature-wrap:after {
-  display: table;
-  content: "";
-}
-.feature-wrap:after {
-  clear: both;
 }
 .feature-icon {
   background-color: #004466;
