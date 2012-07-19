@@ -67,7 +67,7 @@ h6,
 }
 
 .flat {
-	margin-bottom: 0;
+	margin-bottom: 0 !important;
 }
 
 .subheading {
@@ -90,13 +90,17 @@ small {
 
 ul, 
 ol { 
-	margin: 0 0 @base-line; 
+	margin: 0 0 @base-line @base-line; 
 }
 
 li ul, 
 li ol { 
 	margin: 0;
 	.font-size(16);
+}
+
+ul {
+	list-style: square;
 }
 
 // definition lists

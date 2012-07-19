@@ -159,10 +159,10 @@ table {
   display: block;
 }
 .island {
-  padding: 20px;
+  padding: 20px !important;
 }
 .islet {
-  padding: 10px;
+  padding: 10px !important;
 }
 .island:last-child,
 .islet:last-child {
@@ -288,7 +288,7 @@ h6,
   text-transform: uppercase;
 }
 .flat {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 .subheading {
   font-weight: 200;
@@ -305,13 +305,16 @@ small {
 }
 ul,
 ol {
-  margin: 0 0 1.65em;
+  margin: 0 0 1.65em 1.65em;
 }
 li ul,
 li ol {
   margin: 0;
   font-size: 16px;
   font-size: 1.6rem;
+}
+ul {
+  list-style: square;
 }
 dl,
 dd {
