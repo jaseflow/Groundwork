@@ -1,6 +1,5 @@
 body {
-  padding-top: 1.65em;
-  background-image: url(img/dark_brick_wall.png);
+  background-image: url(img/white_brick_wall.png);
   background-repeat: repeat;
 }
 .share-bar {
@@ -24,6 +23,7 @@ body {
   border: 1px solid #dedede;
   color: #e6e6e6;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.15), 1px 1px 1px rgba(255, 255, 255, 0.8);
+  font-size: 3.875em;
 }
 .hero-text {
   padding: 0 1.25em;
@@ -46,9 +46,9 @@ body {
   padding-left: 0;
   border-left: 0;
 }
-.feature-wrap {
-  padding-bottom: 1.65em;
-  background-image: url(img/white_brick_wall.png);
+.header-wrap {
+  padding-top: 3.3em;
+  background-image: url(img/dark_brick_wall.png);
   background-repeat: repeat;
 }
 .feature-icon {

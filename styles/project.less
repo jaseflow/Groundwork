@@ -2,8 +2,7 @@
 @import 'mixins.less';
 
 body {
-	padding-top: @base-line;
-	background-image: url(img/dark_brick_wall.png);
+	background-image: url(img/white_brick_wall.png);
 	background-repeat: repeat;
 }
 
@@ -27,6 +26,7 @@ body {
 	color: darken(@white,10);
 	text-shadow: -1px -1px 1px rgba(0,0,0,0.15),
 				 1px 1px 1px rgba(255,255,255,0.8);
+	font-size: 3.875em;
 }
 
 .hero-text {
@@ -50,10 +50,9 @@ body {
 	}
 }
 
-
-.feature-wrap {
-	padding-bottom: @base-line;
-	background-image: url(img/white_brick_wall.png);
+.header-wrap {
+	padding-top: @base-line*2;
+	background-image: url(img/dark_brick_wall.png);
 	background-repeat: repeat;
 }
 
