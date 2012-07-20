@@ -21,9 +21,9 @@ body {
   box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.03);
   line-height: 1.5;
   border: 1px solid #dedede;
-  color: #e6e6e6;
-  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.15), 1px 1px 1px rgba(255, 255, 255, 0.8);
+  color: #999;
   font-size: 3.875em;
+  font-weight: bold;
 }
 .hero-text {
   padding: 0 1.25em;
