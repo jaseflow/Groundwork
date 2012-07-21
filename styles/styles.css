@@ -225,6 +225,9 @@ table {
 .flyout:hover .flyout-content {
   display: block;
 }
+.captioned {
+  display: block;
+}
 h1,
 h2,
 h3,
@@ -301,10 +304,12 @@ ol,
 ul,
 dl,
 address {
+  font-size: 20px;
+  font-size: 2rem;
   margin-bottom: 1.65em;
 }
 small {
-  font-size: 0.4em;
+  font-size: 0.8em;
 }
 ul,
 ol {
