@@ -18,7 +18,7 @@
 				this.attachEvents();
 			},
 			attachEvents: function() {
-				$el.on('click', '.some-action', this.events.someAction);
+				$el.on('click', 'a', this.events.switchActive);
 			},
 			events: {
 				switchActive: function(e) {

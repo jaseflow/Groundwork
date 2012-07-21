@@ -1,17 +1,104 @@
+
 <!DOCTYPE HTML>
 <html lang="en-US">
+
 <head>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 	<title></title>
 
-	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/project.css">
+	<link rel="stylesheet" href="styles/prettify.css">
 
 	<script src="js/lib/jquery-1.7.2.min.js"></script>
+	<script src="js/lib/prettify.js"></script>
 	<script src="js/app/base-module.js"></script>
-	<script src="js/app/sample-module.js"></script>
+	<script src="js/app/navigation.js"></script>
+	<script src="js/app/content-switch.js"></script>
+
 </head>
-<body>
+
+<body class="wrapper">
+
+	<div class="left-column">
+		
+		<div class="sidebar">
+
+			<ul class="nav stacked main-nav">
+				<li class="active">
+					<a href="includes/home.html" class="media">
+						<div class="media-img">
+							<i class="gw-g">gw</i>
+						</div>
+						<div class="media-body">
+							<span class="grab-title">Groundwork</span>
+							<small class="captioned">Build large scale applications</small>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="includes/markup.html">
+						<span class="grab-title">Index file</span>
+						<small class="captioned">Meta tags &amp; includes</small>
+					</a>
+				</li>
+				<li>
+					<a href="includes/master.html">
+						<span class="grab-title">Master stylesheet</span>
+						<small class="captioned">The importer</small>
+					</a>
+				</li>
+				<li>
+					<a href="includes/variables.html">
+						<span class="grab-title">Variables &amp; Mixins</span>
+						<small class="captioned">The configurations</small>
+					</a>
+				</li>
+				<li>
+					<a href="includes/typo.html">
+						<span class="grab-title">Typography</span>
+						<small class="captioned">Scaled type with vertical rythym</small>
+					</a>
+				</li>
+				<li>
+					<a href="includes/abstractions.html">
+						<span class="grab-title">Abstractions</span>
+						<small class="captioned">Don't repeat yourself</small>
+					</a>
+				</li>
+				<li>
+					<a href="includes/utility.html">
+						<span class="grab-title">Utility</span>
+						<small class="captioned">Helps with the small jobs</small>
+					</a>
+				</li>
+				<li>
+					<a href="includes/addons.html">
+						<span class="grab-title">Add ons</span>
+						<small class="captioned">Use whatever you want</small>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+
+	</div>
+
+	<section class="main-column">
+
+		<div class="site-header">
+			<h1 class="content-title flat">Groundwork</h1>
+			<h4 class="content-description">Build large scale applications</h4>
+		</div>
+
+		<div class="switchable">
+		
+			<!-- Content inserted here with JS -->
+
+		</div>
+
+	</section>
 	
 </body>
 </html>

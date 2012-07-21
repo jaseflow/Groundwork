@@ -1,5 +1,5 @@
 /*!
-* Groundwork Navigation
+* Groundwork TitleSwitcher
 * @requires jQuery v1.7.2+
 *
 * Description
@@ -8,7 +8,7 @@
 */
 !(function($) {
 
-	window.Groundwork.Navigation = window.Groundwork.Navigation || window.Groundwork.BaseModule(function() {
+	window.Groundwork.TitleSwitcher = window.Groundwork.TitleSwitcher || window.Groundwork.BaseModule(function() {
 		
 		var $el;
 
@@ -18,7 +18,7 @@
 				this.attachEvents();
 			},
 			attachEvents: function() {
-				$el.on('click', '.some-action', this.events.someAction);
+				$el.on('click', 'a', this.events.switchActive);
 			},
 			events: {
 				switchActive: function(e) {

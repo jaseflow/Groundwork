@@ -1,5 +1,5 @@
 /*!
-* ProjectName Base Module
+* Groundwork Base Module
 * @requires jQuery v1.7.2+
 *
 * Provides global jquery and project namespaces
@@ -13,12 +13,12 @@ jQuery.noConflict();
 !(function($) {
 
     // Project namespace to avoid contaminating global namespace
-    window.ProjectName = window.ProjectName || {};
+    window.Groundwork = window.Groundwork || {};
 
     // Base module. Ensures init method is called on jquery's document ready
     //  Could potentially add other common module functionality here
     //  The || on modules ensures they can only be instantiated once (Singleton)
-    window.ProjectName.BaseModule = window.ProjectName.BaseModule || function(module) {
+    window.Groundwork.BaseModule = window.Groundwork.BaseModule || function(module) {
         $(function() {
             if (module.init) {
                 module.init();

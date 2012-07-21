@@ -9,3 +9,17 @@
 }
 
 // Create or add your prefered grid system below
+
+[class*="-column"] {
+	float: left;
+	.box-sizing(border-box);
+}
+
+.left-column {
+	width: 30%;
+}
+
+.main-column {
+	width: 70%;
+	padding: 0 @island*4;
+}
