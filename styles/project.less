@@ -1,8 +1,33 @@
 
 @import 'styles.less';
 
+html,
+body {
+	height: 100%;
+}
+
+.switchable {
+	padding-bottom: @base-line;
+}
+
 .wrapper {
 	// padding-top: @base-line;
+}
+
+[class*="-column"] {
+	float: left;
+	.box-sizing(border-box);
+}
+
+.left-column {
+	width: 30%;
+	position: fixed;
+	top: 0; 
+	left: 0;
+}
+
+.main-column {
+	padding: 0 @island*4 0 35%;
 }
 
 // Set a global variable for site sidebar to be same colour as the site and darken on hover, using variables keeps this relative.
@@ -55,14 +80,9 @@
 .site-header {
 	margin-bottom: @base-line;
 	border-bottom: 1px solid @grey-lighter;
+	color: lighten(@grey,40);
 }
 
-.logo {
-	display: block;
-	color: darken(@grey,10);
-	font-weight: bold;
-	margin-bottom: @base-line;
-}
 
 .gw-g {
 	background-color: @site-bg;
@@ -71,8 +91,94 @@
 	.ib();
 	height: 1.875em;
 	width: 1.875em;
-	.font-size(26);
+	font-size: 2.625em;
 	line-height: 1;
 	letter-spacing: -1px;
 	text-align: center;
+}
+
+
+// Home feature list
+// -------------------------
+
+.grid li {
+	display: inline-block;
+	vertical-align: top;
+	.box-sizing(border-box);
+}
+
+.two-up li {
+	width: 50%;
+
+	&:nth-child(2n) {
+		padding-left: @island;
+	}
+}
+
+// Alerts
+// -------------------------
+
+.alert {
+	display: block;
+	font-size: 0.75em;
+	margin-bottom: @base-line;
+
+	:last-child { margin-bottom: 0; }
+}
+
+.alert-friendly {
+	background-color: lighten(@blue,55);
+	border: 1px solid lighten(@blue,50);
+	.box-shadow(inset 0px 1px 1px rgba(255,255,255,0.4));
+}
+
+// Code stuff
+// -------------------------
+
+// Inline and block code styles
+code,
+pre {
+  padding: 0 3px 2px;
+  font-family: 'courier new';
+  font-size: @font-size - 1;
+  color: @grey-dark;
+  .border-radius(3px);
+}
+
+// Inline code
+code {
+  padding: 2px 4px;
+  color: #d14;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+
+// Blocks of code
+pre {
+  display: block;
+  padding: (@base-line - 1) / 2;
+  margin: 0 0 @base-line / 2;
+  font-size: @font-size * .925; // 13px to 12px
+  line-height: @base-line;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc; // fallback for IE7-8
+  border: 1px solid rgba(0,0,0,.15);
+  .border-radius(4px);
+
+  // Make prettyprint styles more spaced out for readability
+  &.prettyprint {
+    margin-bottom: @base-line;
+  }
+
+  // Account for some code outputs that place code tags in pre tags
+  code {
+    padding: 0;
+    color: inherit;
+    background-color: transparent;
+    border: 0;
+  }
 }

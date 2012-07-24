@@ -1,0 +1,18 @@
+
+<p class="charlie intro">The master stylesheet is the one stylesheet that either gets compiled or included if you are using server side LESS configuration. It includes any files you wish to create for your project.</p>
+
+<h3>Importing with LESS</h3>
+
+<p>Using LESS allows you to segment all areas of your code into smaller, more managable files. Your development environment should be neatly organised individual files that get compiled and minified into a single stylesheet.</p>
+
+<div class="islet alert alert-friendly">
+	<p><strong>NB:</strong>&nbsp; Don't forgot that the cascade still applies to the order the files are imported into the master stylesheet. It is good practise to import all resets and base styles first along with your variables/mixins, then followed by your module styling.</p>
+</div>
+
+<h3>Simple theming with LESS</h3>
+
+<p>If you have ever worked on a large project that required multiple themes for the same site, you will know that it can easily get out of hand and you find yourself changing the same thing in a bunch of different stylesheets everytime you want to make a small change.</p>
+
+<p>With LESS we can do this through setting up some core stylesheets for each module that are configured through variables that will then get compiled into a core (or master) stylesheet.</p>
+
+<p>We then create a master stylesheet for each theme that imports the core stylesheet (the one that imports all the modules) as well as it's own set of variables.</p>

@@ -16,6 +16,7 @@
 			init: function() {
 				$el = $('.main-nav');
 				this.attachEvents();
+				$('.active a').click();
 			},
 			attachEvents: function() {
 				$el.on('click', 'a', this.events.contentSwitch);
@@ -23,14 +24,13 @@
 			events: {
 				contentSwitch: function(e) {
 
+					e.preventDefault();
+
 					var address = $('.active a').attr('href');
 					var pageTitle =$('.active .grab-title').html();
 					var description =$('.active .captioned').html();
 
-					e.preventDefault();
-					console.log(pageTitle);
-					// console.log(address);
-					$('.switchable').load(address);
+					$('.switchable').load(address, prettyPrint);
 					$('.content-title').html(pageTitle);
 					$('.content-description').html(description);
 				}

@@ -16,6 +16,7 @@
 			init: function() {
 				$el = $('.main-nav');
 				this.attachEvents();
+				$('.working').click();
 			},
 			attachEvents: function() {
 				$el.on('click', 'a', this.events.switchActive);

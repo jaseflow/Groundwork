@@ -132,7 +132,6 @@ body {
 }
 html {
   overflow-y: scroll;
-  font-size: 62.5%;
 }
 body {
   line-height: 1.65em;
@@ -140,7 +139,6 @@ body {
   font-weight: 300;
   color: #999999;
   font-size: 16px;
-  font-size: 1.6rem;
   background-color: #fafafa;
 }
 img {
@@ -154,20 +152,6 @@ table {
   width: 95%;
   margin: 0 auto;
   max-width: 960px;
-}
-[class*="-column"] {
-  float: left;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.left-column {
-  width: 30%;
-}
-.main-column {
-  width: 70%;
-  padding: 0 5em;
 }
 .island,
 .islet {
@@ -261,49 +245,42 @@ h2 small {
 }
 .mega {
   margin-bottom: 0.825em;
-  font-size: 48px;
-  font-size: 4.8rem;
+  font-size: 3em;
   line-height: 1.5;
 }
 h1,
 .alpha {
   margin-bottom: 0.4125em;
-  font-size: 36px;
-  font-size: 3.6rem;
+  font-size: 2.25em;
   line-height: 1.2;
 }
 h2,
 .beta {
   margin-bottom: 0.4125em;
-  font-size: 28px;
-  font-size: 2.8rem;
+  font-size: 1.75em;
   line-height: 1.2;
 }
 h3,
 .charlie {
   margin-bottom: 0.4125em;
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 1.5em;
   line-height: 1.3;
 }
 h4,
 .delta {
   margin-bottom: 1.65em;
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 1.125em;
   line-height: 1.25;
 }
 h5,
 .echo {
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 1em;
   margin-bottom: 1.65em;
 }
 h6,
 .milli {
   margin-bottom: 1.65em;
-  font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875em;
   font-weight: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -322,8 +299,6 @@ ol,
 ul,
 dl,
 address {
-  font-size: 20px;
-  font-size: 2rem;
   margin-bottom: 1.65em;
 }
 small {
@@ -336,8 +311,6 @@ ol {
 li ul,
 li ol {
   margin: 0;
-  font-size: 16px;
-  font-size: 1.6rem;
 }
 ul {
   list-style: square;
@@ -1184,6 +1157,29 @@ ul.icons li .icon-large:before {
 .icon-user-md:before {
   content: "\f200";
 }
+html,
+body {
+  height: 100%;
+}
+.switchable {
+  padding-bottom: 1.65em;
+}
+[class*="-column"] {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.left-column {
+  width: 30%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.main-column {
+  padding: 0 5em 0 35%;
+}
 .sidebar {
   background-color: #fafafa;
 }
@@ -1226,12 +1222,7 @@ ul.icons li .icon-large:before {
 .site-header {
   margin-bottom: 1.65em;
   border-bottom: 1px solid #dddddd;
-}
-.logo {
-  display: block;
-  color: #3b3b3b;
-  font-weight: bold;
-  margin-bottom: 1.65em;
+  color: #bbbbbb;
 }
 .gw-g {
   background-color: #fafafa;
@@ -1241,9 +1232,79 @@ ul.icons li .icon-large:before {
   zoom: 1;
   height: 1.875em;
   width: 1.875em;
-  font-size: 26px;
-  font-size: 2.6rem;
+  font-size: 2.625em;
   line-height: 1;
   letter-spacing: -1px;
   text-align: center;
+}
+.grid li {
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.two-up li {
+  width: 50%;
+}
+.two-up li:nth-child(2n) {
+  padding-left: 1.25em;
+}
+.alert {
+  display: block;
+  font-size: 0.75em;
+  margin-bottom: 1.65em;
+}
+.alert :last-child {
+  margin-bottom: 0;
+}
+.alert-friendly {
+  background-color: #e6f7ff;
+  border: 1px solid #cceeff;
+  -webkit-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.4);
+  -moz-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.4);
+}
+code,
+pre {
+  padding: 0 3px 2px;
+  font-family: 'courier new';
+  font-size: 15px;
+  color: #333333;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+code {
+  padding: 2px 4px;
+  color: #d14;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+pre {
+  display: block;
+  padding: 0.32499999999999996em;
+  margin: 0 0 0.825em;
+  font-size: 14.8px;
+  line-height: 1.65em;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+pre.prettyprint {
+  margin-bottom: 1.65em;
+}
+pre code {
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  border: 0;
 }

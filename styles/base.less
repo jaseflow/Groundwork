@@ -8,7 +8,6 @@ html,body {
 
 html {
 	overflow-y: scroll;
-	font-size: 62.5%; // This is needed for the font-size mixin to work
 }
 
 body {
@@ -16,7 +15,7 @@ body {
 	font-family: @base-font;
 	font-weight: @base-weight;
 	color: @base-color;
-	.font-size(@font-size);
+	font-size: @font-size;
 	background-color: @site-bg;
 }
 
