@@ -3,16 +3,16 @@
 
 <h3>The Doctype</h3>
 <pre class="prettyprint">&lt;!DOCTYPE HTML&gt;</pre>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>Surely everyone is now working with this DOCTYPE and has been for a long time. This is supported by all browsers that mean anything (all it does is trigger standards mode) and is a million times shorter than any previous DOCTYPE.</p>
 
 <h3>The Charset</h3>
 <pre class="prettyprint">&lt;meta charset="UTF-8"&gt;</pre>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>This attribute declares the character encoding used for the page. UTF-8 is the encouraged character encoding. The META element must be within the <code>&lt;head&gt;</code> and within the 512 first <strong>bytes</strong> of the page. That will surely come in use next pub night.</p>
 
 <h3>The Viewport</h3>
-<pre class="prettyprint">&lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"&gt;</pre>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<pre class="prettyprint">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0&gt;</pre>
+<p>This is a topic of great discussion. This META tag is a key ingredient to building responsive websites, controlling the way the phone reacts to different device resolutions (mobiles, tablets etc). <code>width=device-width</code> tells the browser to assume that the page is as wide as the device. <code>initial-scale=1.0"</code> tells the browser not to zoom in or out and not make assumptions that the website is built for larger screens. You could set a <code>maximum-scale=1.0</code> if you would like to stop the user from zooming on the phone but there shouldn't be any reason you need to do this.</p>
 
 <div class="alert alert-friendly islet">
-	<p class="flat"><strong>NB: </strong>Remember to always import your Javascript files after your stylesheets to stop any flashes of unstyled content (FOUC).</p>
+	<p class="flat"><strong>NB: </strong>Remember to always import your Javascript files after your stylesheets to increase performance and stop any flashes of unstyled content (FOUC).</p>
 </div>
