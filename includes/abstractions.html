@@ -1,4 +1,14 @@
-<p class="charlie intro">Ahh abstractions! I will never forget the day I read <a href="http://www.stubbornella.org/content/2011/04/28/our-best-practices-are-killing-us/" target="_blank">Our Best Practices are Killing Us</a> by Nicole Sullivan. It opened my eyes to a completely different way of building websites.</p>
+<p class="charlie intro">A page within a website should never be looked at as a single entity. It is a final product that has been built up from small blocks of repeated patterns.</p>
 
-<h3>It just makes sense</h3>
-<p>Previously when creating websites, I would jump in Photoshop, create a beautiful pixel perfect design, get sign off from the client, jump into my text editor and start coding from the logo in the top left to the last link in the footer in one foul swoop. The final product looked great and the client was stoked. Two months down the track and the client notices the increase in traffic and a demand for a redesign to better serve the way people are using the website. I couldn't </p>
+<h3>DRY (Don't repeat yourself)</h3>
+<p>Previously when creating websites, I would jump in Photoshop, create a beautiful pixel perfect design, get sign off from the client, jump into my text editor and start coding from the logo in the top left to the last link in the footer in one foul swoop.</p>
+<p>On face value the site looked great but when you dig deeper into the code, things were a lot messier than they appeared. There would be 20+ different font size declarations, even though there were probably only 3-4 different sizes being used on the site. The same problem of repeating code was occuring with structural styling within modules.</p>
+<p>With the use of abstracted classes we can:</p>
+<ul>
+	<li>Develop prototypes quickly</li>
+	<li>Write less code</li>
+	<li>Increase performance</li>
+</ul>
+
+<h3>Open for extension, closed for modification</h3>
+<p>Abstraction classes are considered base classes, they should never be modified. Variations of these classes will occuer and this is when they become open for extension. Extension is when you add an additional class to the element after the base or abstract class has been added. </p>
