@@ -1,0 +1,39 @@
+<p class="charlie intro">Utility classes complete those little jobs that don't pop up around the website but just don't warrant there own stylesheet.</p>
+
+<h3>The clear fix</h3>
+<pre class="prettyprint linenums">
+.cf:before,
+.cf:after {
+  content:"";
+  display:table;
+}
+.cf:after {
+  clear:both;
+}
+// For IE 6/7 (trigger hasLayout)
+.cf {
+  *zoom:1;
+}
+</pre>
+<p>There have been many clearing techniques in the past but this one just works and it lives up to its name, the <a href="http://nicolasgallagher.com/micro-clearfix-hack/">Micro clearfix</a>. We use this to clear the container of floated elements. You will also notice that we chain any elements that frequently require a clear. This saves you from having to add <code>.cf</code> to every the same type of element every project. If you find your selector getting to long then you have look into refactoring your code and using more abstractions.</p>
+
+<h3>Hide text</h3>
+<pre class="prettyprint linenums">
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+</pre>
+<p>This class should be used whenever you want to use a background image on any block element. This new technique makes a lot more sense than its predecessor which would text-indent some extreme fixed value that made sure it's off the page. Using such a large value meant the page actually had to render the dimensions which would cause performance issues (albeit minor). More on this can be seen on <a href="http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/">Zeldman's blog</a></p>
+
+<h3>Float classes</h3>
+<pre class="prettyprint linenums">
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+</pre>
+<p>These float classes should be used sparingly. Remember we should be using a grid system to get the structure of the website together, floats and widths should never be applied to modules to allow them to be reused again in a different area of the site.</p>

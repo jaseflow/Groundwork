@@ -1226,8 +1226,9 @@ body {
   color: #bbbbbb;
 }
 .gw-g {
-  background-color: #fafafa;
-  color: #0088cc;
+  background-color: #0088cc;
+  color: #ffffff;
+  font-weight: bold;
   display: inline-block;
   *display: inline;
   zoom: 1;
@@ -1254,7 +1255,6 @@ body {
 }
 .alert {
   display: block;
-  font-size: 0.75em;
   margin-bottom: 1.65em;
 }
 .alert :last-child {
