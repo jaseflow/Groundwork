@@ -16,3 +16,20 @@
 <p>With LESS we can do this through setting up some core stylesheets for each module that are configured through variables that will then get compiled into a core (or master) stylesheet.</p>
 
 <p>We then create a master stylesheet for each theme that imports the core stylesheet (the one that imports all the modules) as well as it's own set of variables.</p>
+
+<h5>Example folder structure</h5>
+<pre class="prettyprint linenums">
+// scripts
+// styles
+  // core
+    - core.less
+    - reset.less
+    - base.less
+    - modules.less
+  // bluetheme
+    - variables.less
+    - bluetheme.less (imports ../core.less)
+  // redtheme
+    - variables.less
+    - redtheme.less (imports ../core.less)
+</pre>
