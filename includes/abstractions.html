@@ -1,4 +1,4 @@
-<p class="charlie intro">A page within a website should never be looked at as a single entity. It is a final product that has been built up from small blocks of repeated patterns.</p>
+<p class="charlie intro">A page within a website should never be looked at as a single entity. It is a final product that has been built from the ground up, made from small blocks of repeated patterns.</p>
 
 <h3>DRY (Don't repeat yourself)</h3>
 <p>Previously when creating websites, I would jump in Photoshop, create a beautiful pixel perfect design, get sign off from the client, jump into my text editor and start coding from the logo in the top left to the last link in the footer in one foul swoop.</p>
@@ -8,9 +8,28 @@
 	<li>Develop prototypes quickly</li>
 	<li>Write less code</li>
 	<li>Increase performance</li>
+	<li>Maintain the website without pulling your hair out</li>
 </ul>
 
 <h3>Open for extension, closed for modification</h3>
 <p>Abstraction classes are considered base classes, they should never be modified. Variations of these classes will occuer and this is when they become open for extension. Extension is when you add an additional class to the element after the base or abstract class has been added. </p>
 
-<code class="beta">.</code>
+<h3>Extend modules with classes</h3>
+<p>Let's use some of our abstraction classes to construct a sub navigation.</p>
+<pre class="prettyprint linenums">
+&lt;ul class="nav stacked sub-nav"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Our mission&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Our promise&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Our team&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+<p>See above we have used the <code>.nav</code> class to remove the bullet points and default margin/padding from our list item. We then use the <code>.stacked</code> class to get our list to display vertically with some block level links.</p>
+<p>Finally, we add the <code>.sub-nav</code> in this example, to add our module specific styles.</p>
+
+<h4>Further reading</h4>
+<ul>
+	<li><a href="http://csswizardry.com/2012/04/the-single-responsibility-principle-applied-to-css/">Harry Robert: The single responsibility principle</a></li>
+	<li><a href="http://csswizardry.com/2011/09/the-nav-abstraction/">Harry Roberts: The nav abstraction</a></li>
+	<li><a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">Nicole Sullivan: The media block</a></li>
+	<li><a href="http://www.stubbornella.org/content/2011/04/28/our-best-practices-are-killing-us/">Nicole Sullivan: Our best practices are killing us</a></li>
+</ul>
