@@ -8,78 +8,79 @@ h6 {
 	font-weight: @headings-weight;
 	color: @headings-color;
 	text-rendering: optimizelegibility;
+	margin: 0;
 }
 
-h1 small, 
-h2 small {
-	font-weight: normal;
-	color: @grey-light;
-}
-
-.mega {
-	margin-bottom: @base-line / 2;
-	.font-size(48);
-	line-height: 1.5;
-}
-
-
-h1,
-.alpha { 
-	margin-bottom: @base-line / 4;
-	.font-size(36);
+h1 {
+	.font-size(32);
+	margin-bottom: @line-height/2;
 	line-height: 1.2;
 }
 
 h2,
-.beta { 
-	margin-bottom : @base-line / 4;
-	.font-size(28);
+.h2 { 
+	margin-bottom: @line-height / 2;
+	.font-size(24);
 	line-height: 1.2;
 }
 
 h3,
-.charlie { 
-	margin-bottom: @base-line / 4;
-	.font-size(24);
-	line-height: 1.3;
+.h3 { 
+	margin-bottom: @line-height / 1.5;
+	.font-size(21);
+	line-height: 1.3; 
 }
 
 h4,
-.delta { 
-	margin-bottom: @base-line;
+.h4 { 
+	margin-bottom: @line-height;
 	.font-size(18);
 	line-height: 1.25;
 }
 
 h5,
-.echo { 
+.h5 { 
 	.font-size(16);
-	margin-bottom: @base-line;
+	margin-bottom: @line-height;
 }
 
 h6,
-.milli { 
-	margin-bottom: @base-line;
+.h6 { 
+	margin-bottom: @line-height;
 	.font-size(14); 
-	font-weight: normal;
-	letter-spacing: 1px;
-	text-transform: uppercase;
 }
 
-.flat {
-	margin-bottom: 0 !important;
-}
+// $Body text
 
-.subheading {
-	font-weight: 200;
-}
+p,
+ul,
+ol,
+table,
+form { margin-bottom: @base-line }
 
-// TYPOGRAPHY
+// !imporant is fine here, these styles are boolean
+
+.flat { margin-bottom: 0 !important }
+.pressed { margin-bottom: @base-line/2 !important}
+
+// $Alignment
+
+.text-left { text-align: left }
+.text-right { text-align: right }
+.text-center { text-align: center }
+
+// $Weights
+
+b,
+strong { font-weight: bold }
+
+.subheading { font-weight: 200 }
+
+// $Block type
 
 p, 
 ol, 
 ul, 
-dl, 
 address { 
 	margin-bottom: @base-line; 
 }
@@ -87,6 +88,8 @@ address {
 small { 
 	font-size: 0.4em;
 }
+
+// $Lists
 
 ul, 
 ol { 
@@ -96,37 +99,8 @@ ol {
 li ul, 
 li ol { 
 	margin: 0;
-	.font-size(16);
 }
 
 ul {
 	list-style: square;
-}
-
-// definition lists
-
-dl, 
-dd { 
-	margin-bottom: @base-line;
-}
-
-dt { 
-	font-weight: bold;
-}
-
-// text-level
-
-b, strong { 
-	font-weight: bold;
-}
-
-// Links
-// -------------------------
-
-a {
-	color: @link-color;
-	text-decoration: none;
-	&:hover {
-		color: @link-color-hover;
-	}
 }

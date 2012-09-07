@@ -23,12 +23,14 @@
 // Type stuff
 // -------------------------
 
-@font-size:                  16px;
-@base-line:                  1.65em;
+@base-size:                  87.5%	;
+@font-size:                  16;
+@line-height:                1.618em;
 @base-font:                  'Helvetica Neue', Helvetica, arial, sans-serif;
 @base-weight:                300;
 @alt-font:                   Cambria, Georgia, Times, 'Times New Roman';          
-@base-color:                 @grey;
+@base-color:                 @grey-lighter;
+@alt-color:                  @orange;
 @headings-font:              inherit;
 @headings-weight:            bold;
 @headings-color:             inherit;
@@ -36,12 +38,21 @@
 @link-color:                 @blue;
 @link-color-hover:           darken(@link-color,5);
 
+// Layout stuff
+// -------------------------
+
+
+@base-line:  		 		 @line-height;
+@gutterwidth: 		     	 24px;
+
 // Base
 // -------------------------
 
 @site-bg:                    darken(@grey,10);
 
+
 // Buttons
+// -------------------------
 
 @btn-bg-top-color:           darken(@white,5);
 @btn-bg-btm-color:           darken(@btn-bg-top-color,5);
@@ -51,8 +62,3 @@
 @btn-color:                  @grey;
 @btn-shadow-inner:           inset 0 1px 1px rgba(255,255,255,0.8);
 @btn-border-radius:          2px;
-
-// Textures
-// -------------------------
-
-@noise-bg:                  url(img/noise.png);
