@@ -1,0 +1,57 @@
+//
+// Responsive: Utility classes
+// --------------------------------------------------
+
+
+// Hide from screenreaders and browsers
+// Credit: HTML5 Boilerplate
+.hidden
+  display: none
+  visibility: hidden
+
+// Visibility utilities
+
+// For desktops
+.visible-phone
+  display: none !important
+
+.visible-tablet
+  display: none !important
+
+.hidden-desktop
+  display: none !important
+
+.visible-desktop
+  display: inherit
+  
+
+// Tablets & small desktops only
+@media (min-width: medium) and (max-width: large)
+
+  .hidden-desktop
+    display: inherit !important
+
+  .visible-desktop
+    display: none !important
+
+  .visible-tablet
+    display: inherit !important
+
+  .hidden-tablet
+    display: none !important
+
+
+// Phones only
+@media (max-width: medium)
+
+  .hidden-desktop
+    display: inherit !important
+
+  .visible-desktop
+    display: none !important
+
+  .visible-phone
+    display: inherit !important
+
+  .hidden-phone
+    display: none !important
