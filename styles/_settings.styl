@@ -4,95 +4,99 @@
 
 // Greyscale
 
-black = #000
-grey-darker = #111
-grey-dark =  #333
-grey = #555
-grey-light = #999
-grey-lighter = #ddd
-white = #fff
+$black = #000
+$grey-darker = #111
+$grey-dark =  #333
+$grey = #555
+$grey-light = #999
+$grey-lighter = #ddd
+$white = #fff
 
 // Accent
 
-red = #ff0000
-blue = #08c
-yellow = #ffde00
-orange = #ff7800
-green = #2dda1b
+$red = #ff0000
+$blue = #08c
+$yellow = #ffde00
+$orange = #ff7800
+$green = #2dda1b
 
 // Project colours
 
-branding =  blue
+$branding =  blue
 
 // Type stuff
 // -------------------------
 
 // Fonts
 
-helvetica-neue = "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
-helvetica = "Helvetica Neue", Helvetica, Arial, sans-serif
-georgia = Georgia, Cambria, "Times New Roman", Times, serif
-lucidia-grande = "Lucida Grande", Tahoma, Verdana, Arial, sans-serif
-monospace = unquote("'Bitstream Vera Sans Mono', Consolas, Courier, monospace")
-verdana = Verdana, Geneva, sans-serif
+$helvetica-neue = "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
+$helvetica = "Helvetica Neue", Helvetica, Arial, sans-serif
+$georgia = Georgia, Cambria, "Times New Roman", Times, serif
+$lucidia-grande = "Lucida Grande", Tahoma, Verdana, Arial, sans-serif
+$monospace = unquote("'Bitstream Vera Sans Mono', Consolas, Courier, monospace")
+$verdana = Verdana, Geneva, sans-serif
 
 // Type setting
 
-base-size = 87.5%
-font-size = 16px
-line-height = 1.618em
-base-font = helvetica
-base-weight = 300
-alt-font = georgia          
-base-color = grey-lighter
-alt-color = branding
-headings-font = inherit
-headings-weight = bold
-headings-color = inherit
+$base-size = 87.5%
+$font-size = 16px
+$line-height = 1.618em
+$base-font = $helvetica
+$base-weight = 300
+$alt-font = $georgia          
+$base-color = $grey-lighter
+$alt-color = $branding
+$headings-font = inherit
+$headings-weight = bold
+$headings-color = inherit
 
-link-color = blue
-// link-color-hover = darken(link-color,5);
+$link-color = $blue
+$link-color-hover = darken($link-color,5);
 
-placeholderText = grey-light
+$placeholderText = grey-light
 
 // Layout stuff
 // -------------------------
 
 
-base-line = line-height
-gutterwidth = 24px
-horizontal-components = 180px
+$base-line = $line-height
+$gutterwidth = 24px
+$horizontal-components = 180px
+
+$push-distance = $base-line
+$island = 20px
+$islet = 10px
+
 
 // Responsive stuff
 
-small = 37.5em
-medium = 45em
-large = 58.75em
-larger = 78.75em
+$small = 37.5em
+$medium = 45em
+$large = 58.75em
+$larger = 78.75em
 
 // Base
 // -------------------------
 
-site-bg = darken(grey,10)
-
+$site-bg = darken($grey,10)
 
 // Buttons
 // -------------------------
 
-btn-bg-top-color = darken(white,5)
-btn-bg-btm-color = darken(btn-bg-top-color,5)
-btn-border-color = darken(btn-bg-top-color,10)
-btn-border-width = 1px
-btn-border-style = solid
-btn-color = grey
-btn-shadow-inner = inset 0 1px 1px rgba(255,255,255,0.8)
-btn-border-radius = 2px
+$btn-bg-top-color = darken($white,5)
+$btn-bg-btm-color = darken($btn-bg-top-color,5)
+$btn-border-color = darken($btn-bg-top-color,10)
+$btn-border-width = 1px
+$btn-border-style = solid
+$btn-color = $grey
+$btn-shadow-inner = inset 0 1px 1px rgba(255,255,255,0.8)
+$btn-border-radius = 2px
 
 // Forms
 // -------------------------
 
-input-border-radius = 3px
-input-background = white
-input-border = darken(white,15)
-input-height = line-height + 10px // base line-height + 8px vertical padding + 2px top/bottom border
-input-disabled-background = darken(white,5%)
+$input-border-radius = 3px
+$input-background = $white
+$input-border = darken($white,15)
+$input-height = ($line-height + 10px) // base line-height + 8px vertical padding + 2px top/bottom border
+$input-disabled-background = darken($white,5%)

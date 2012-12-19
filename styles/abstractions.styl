@@ -14,10 +14,6 @@
 .islet
 	padding: 10px !important
 
-.island:last-child
-.islet:last-child
-	margin-bottom: 0
-
 // Nicole Sullivan Media Block
 // -------------------------
 // http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
@@ -65,7 +61,7 @@
 
 .nav a
 	display: inline-block
-	// .ib()
+	ib()
 
 // Vertical
 
@@ -75,6 +71,20 @@
 
 .stacked a
 	display: block
+
+// Spaced
+
+.spaced li
+	margin-left: $push-distance
+	&:first-child
+		margin-left: 0
+
+// Striped
+
+.striped li
+	border-top: 1px solid $striped-color
+	&:first-child
+		border-top: 0
 
 // Flyout content on hover
 // -------------------------

@@ -6,19 +6,20 @@
 	// .box-sizing(border-box)
 
 html
-	background: site-bg 
+	background: $site-bg 
 	font-size: 100%
+	-webkit-backface-visibility: hidden; // Addresses a small issue in webkit: http://bit.ly/NEdoDq
 	-webkit-overflow-scrolling: touch 
-	// -webkit-tap-highlight-color: lighten(base-color, 75%)
+	-webkit-tap-highlight-color: lighten($base-color, 75%)
 	-webkit-text-size-adjust: 100% 
 	-ms-text-size-adjust: 100%
 
 body 
-	background-color : transparent
-	font-family : base-font
+	background-color: transparent
+	font-family: $base-font
 	// .font-size()
-	line-height : line-height
-	color : base-color
+	line-height: $line-height
+	color: $base-color
 
 // Soft resets
 // -------------------------
@@ -51,7 +52,7 @@ embed
 // -------------------------
 
 a
-	color: link-color
+	color: $link-color
 	text-decoration: none
 		&:hover
-			color: link-color-hover
+			color: $link-color-hover

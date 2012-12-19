@@ -1,0 +1,105 @@
+
+// UTILITY MIXINS
+// --------------------------------------------------
+
+// Mixin: Triangle
+// One of my favorites. Makes a little css triangle for you. Pass it a direction (up, down, left, right),
+// size (in pixels), and a color.
+// ex. triangle()
+// ex. triangle: down 15px blue
+
+triangle(direction = up, size = 10px, color = #000)
+  width: 0
+  height: 0
+  if direction == up
+    border-left: size solid transparent
+    border-right: size solid transparent
+    border-bottom: size solid color
+  else if direction == down
+    border-left: size solid transparent
+    border-right: size solid transparent
+    border-top: size solid color
+  else if direction == left
+    border-top: size solid transparent
+    border-bottom: size solid transparent
+    border-right: size solid color
+  else if direction == right
+    border-top: size solid transparent
+    border-bottom: size solid transparent
+    border-left: size solid color
+
+
+// Andy Clark's rem calculator
+// -------------------------
+// http://stuffandnonsense.co.uk/projects/320andup/
+
+// font-size($size = 16)
+//   $rem = ($size / 16)
+//   font-size : unit($size, px)
+//   font-size : unit($rem, rem)
+
+// Sizing shortcuts
+// --------------------------------------------------
+
+size($height = 5px, $width = 5px)
+  height: $height
+  width: $width
+
+square($size = 5px)
+  size($size, $size)
+
+// Make any element resizable for prototyping
+
+resizable($direction = both)
+  resize: $direction // Options are horizontal, vertical, both
+  overflow: auto // Safari fix
+  
+
+// CSS3 PROPERTIES
+// --------------------------------------------------
+
+// IE 7 Inline Block hack
+
+ib()
+  *display: inline
+  zoom: 1
+
+// Webkit-style focus
+// ------------------
+tab-focus()
+  // Default
+  outline: thin dotted #333
+  // Webkit
+  outline: 5px auto -webkit-focus-ring-color
+  outline-offset: -2px
+
+// Placeholder text
+// -------------------------
+placeholder($color = $placeholderText)
+  &:-moz-placeholder
+    color: $color
+  &:-ms-input-placeholder
+    color: $color
+  &::-webkit-input-placeholder
+    color: $color
+
+
+// Border Radius
+border-radius($radius = 5px)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  border-radius: $radius
+
+// Drop shadows
+box-shadow($shadow = 0 1px 3px rgba(0,0,0,.25))
+  -webkit-box-shadow: $shadow
+  -moz-box-shadow: $shadow
+  box-shadow: $shadow
+
+// Transitions
+transition($transition)
+  -webkit-transition: $transition
+  -moz-transition: $transition
+  -ms-transition: $transition
+  -o-transition: $transition
+  transition: $transition

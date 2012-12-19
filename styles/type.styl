@@ -1,48 +1,87 @@
+
+// Typographical Mixins
+// -------------------------
+
+// Text Margin
+
+text-margin(size)
+  margin-bottom: unit(size/1.6, px)
+
+// Uppercase
+
+uppercase()
+  text-transform: uppercase
+
+// Bold
+
+bold()
+  font-weight: bold
+
+// Border 
+
+border(params...)
+  params = unquote('1px solid') unless params
+  border: params
+
+// Alias: B
+
+b()
+  border()
+
+// Typographical styles
+// -------------------------
+
 h1
 h2
 h3
 h4
 h5
 h6
-	font-family: headings-font
-	font-weight: headings-weight
-	color: headings-color
+	font-family: $headings-font
+	font-weight: $headings-weight
+	color: $headings-color
 	text-rendering: optimizelegibility
 	margin: 0
 
 h1
 .alpha
-	// .font-size(32)
-	margin-bottom: line-height/2
+	font-size: 32px
+	font-size: 2rem
+	text-margin(32)
 	line-height: 1.2
 
 h2
 .beta
-	margin-bottom: line-height / 2
-	// .font-size(24)
+	font-size: 24px
+	font-size: 1.5rem
+	text-margin(24)
 	line-height: 1.2
 
 h3
 .charlie
-	margin-bottom: line-height / 1.5
-	// .font-size(21)
+	font-size: 21px
+	font-size: 1.3125rem
+	text-margin(21)
 	line-height: 1.3
 
 h4
 .delta
-	margin-bottom: line-height
-	// .font-size(18)
+	font-size: 18px
+	font-size: 1.125rem
+	text-margin(18)
 	line-height: 1.25
 
 h5
 .echo
-	// .font-size(16)
-	margin-bottom: line-height
+	font-size: 16px
+	font-size: 1rem
+	text-margin(16)
 
 h6
 .milli
-	margin-bottom: line-height
-	// .font-size(14)
+	font-size: 14px
+	font-size: 0.875rem
+	text-margin(14)
 
 // $Body text
 
@@ -51,7 +90,7 @@ ul
 ol
 table
 form
-	margin-bottom: base-line
+	margin-bottom: $base-line
 
 // !imporant is fine here, these styles are boolean
 
@@ -59,7 +98,7 @@ form
 	margin-bottom: 0 !important
 
 .pressed
-	margin-bottom: base-line/2 !important
+	margin-bottom: $base-line/2 !important
 
 // $Alignment
 
@@ -87,7 +126,7 @@ p
 ol
 ul
 address
-	margin-bottom: base-line
+	margin-bottom: $base-line
 
 small
 	font-size: 0.4em
@@ -96,7 +135,7 @@ small
 
 ul
 ol
-	margin: 0 0 base-line base-line
+	margin: 0 0 $base-line $base-line
 
 li ul
 li ol 
