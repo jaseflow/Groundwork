@@ -135,6 +135,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.618em;
   color: #ddd;
+  font-weight: 200;
 }
 img {
   max-width: 100%;
@@ -171,10 +172,9 @@ h4,
 h5,
 h6 {
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 200;
   color: inherit;
   text-rendering: optimizelegibility;
-  margin: 0;
 }
 h1,
 .alpha {
@@ -230,20 +230,20 @@ form {
   margin-bottom: 1.618em/2 !important;
 }
 .text-left {
-  text-align: left;
+  text-align: left !important;
 }
 .text-right {
-  text-align: right;
+  text-align: right !important;
 }
 .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 b,
 strong {
-  font-weight: bold;
+  font-weight: 700;
 }
 .subheading {
-  font-weight: 200;
+  font-weight: 100;
 }
 p,
 ol,
@@ -252,7 +252,8 @@ address {
   margin-bottom: 1.618em;
 }
 small {
-  font-size: 0.4em;
+  font-size: 0.4px;
+  font-size: 0.025rem;
 }
 ul,
 ol {
@@ -311,8 +312,6 @@ ul {
 }
 .nav a {
   display: inline-block;
-  *display: inline;
-  zoom: 1;
 }
 .stacked li {
   float: none;
@@ -450,13 +449,15 @@ legend {
   padding: 0;
   margin-bottom: base-line;
   font-size: 24px;
+  font-size: 1.5rem;
   line-height: 3.236em;
   color: grey-dark;
   border: 1px solid;
   border-bottom: 1px solid #e5e5e5;
 }
 legend small {
-  font-size: 1.2135em;
+  font-size: 1.2135px;
+  font-size: 0.07584375rem;
   color: grey-light;
 }
 label,
@@ -465,6 +466,7 @@ button,
 select,
 textarea {
   font-size: 16px;
+  font-size: 1rem;
   font-weight: normal;
   line-height: 1.618em;
 }
@@ -500,6 +502,7 @@ input[type="color"],
   padding: 4px 6px;
   margin-bottom: 1.618em/2;
   font-size: 16px;
+  font-size: 1rem;
   line-height: 1.618em;
   color: #555;
   vertical-align: middle;
@@ -681,8 +684,6 @@ input[type="checkbox"][readonly] {
 }
 .help-inline {
   display: inline-block;
-  *display: inline;
-  zoom: 1;
   vertical-align: middle;
   padding-left: 5px;
 }

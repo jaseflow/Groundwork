@@ -36,19 +36,28 @@ $lucidia-grande = "Lucida Grande", Tahoma, Verdana, Arial, sans-serif
 $monospace = unquote("'Bitstream Vera Sans Mono', Consolas, Courier, monospace")
 $verdana = Verdana, Geneva, sans-serif
 
+// Font weights
+
+$xl-weight = 100
+$l-weight = 200
+$m-weight = 400
+$h-weight = 700
+
 // Type setting
 
 $base-size = 87.5%
 $font-size = 16px
 $line-height = 1.618em
 $base-font = $helvetica
-$base-weight = 300
+$base-weight = $l-weight
 $alt-font = $georgia          
 $base-color = $grey-lighter
 $alt-color = $branding
 $headings-font = inherit
-$headings-weight = bold
+$headings-weight = $l-weight
 $headings-color = inherit
+
+// Links and placeholder text
 
 $link-color = $blue
 $link-color-hover = darken($link-color,5);
@@ -67,8 +76,7 @@ $push-distance = $base-line
 $island = 20px
 $islet = 10px
 
-
-// Responsive stuff
+// Responsive sizes
 
 $small = 37.5em
 $medium = 45em

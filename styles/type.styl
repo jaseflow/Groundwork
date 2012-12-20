@@ -2,6 +2,24 @@
 // Typographical Mixins
 // -------------------------
 
+// Andy Clark's rem calculator
+// -------------------------
+// http://stuffandnonsense.co.uk/projects/320andup/
+
+font-size($size-value = 1.6)
+  font-size: unit($size-value,px)
+  font-size: unit(($size-value / 16),rem)
+
+// Placeholder text
+
+placeholder($color = $placeholderText)
+  &:-moz-placeholder
+    color: $color
+  &:-ms-input-placeholder
+    color: $color
+  &::-webkit-input-placeholder
+    color: $color
+
 // Text Margin
 
 text-margin(size)
@@ -41,46 +59,39 @@ h6
 	font-weight: $headings-weight
 	color: $headings-color
 	text-rendering: optimizelegibility
-	margin: 0
 
 h1
 .alpha
-	font-size: 32px
-	font-size: 2rem
+	font-size(32)
 	text-margin(32)
 	line-height: 1.2
 
 h2
 .beta
-	font-size: 24px
-	font-size: 1.5rem
+	font-size(24)
 	text-margin(24)
 	line-height: 1.2
 
 h3
 .charlie
-	font-size: 21px
-	font-size: 1.3125rem
+	font-size(21)
 	text-margin(21)
 	line-height: 1.3
 
 h4
 .delta
-	font-size: 18px
-	font-size: 1.125rem
+	font-size(18)
 	text-margin(18)
 	line-height: 1.25
 
 h5
 .echo
-	font-size: 16px
-	font-size: 1rem
+	font-size(16)
 	text-margin(16)
 
 h6
 .milli
-	font-size: 14px
-	font-size: 0.875rem
+	font-size(14)
 	text-margin(14)
 
 // $Body text
@@ -103,22 +114,22 @@ form
 // $Alignment
 
 .text-left
-	text-align: left
+	text-align: left !important
 
 .text-right
-	text-align: right
+	text-align: right !important
 
 .text-center
-	text-align: center
+	text-align: center !important
 
 // $Weights
 
 b
 strong
-	font-weight: bold
+	font-weight: $h-weight
 
 .subheading
-	font-weight: 200
+	font-weight: $xl-weight
 
 // $Block type
 
