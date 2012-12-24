@@ -1,3 +1,4 @@
+
 // Webkit-style focus
 // ------------------
 tab-focus()
@@ -7,10 +8,8 @@ tab-focus()
   outline: 5px auto -webkit-focus-ring-color
   outline-offset: -2px
 
-//
 // Forms
 // --------------------------------------------------
-
 
 // GENERAL STYLES
 // --------------
@@ -30,16 +29,16 @@ legend
   width: 100%
   padding: 0
   margin-bottom: base-line
-  font-size: $font-size * 1.5
+  font-size(18)
   line-height: $base-line * 2
   color: grey-dark
   border: 0
   border-bottom: 1px solid #e5e5e5
 
-  // Small
-  small
-    font-size: $base-line * .75
-    color: grey-light
+// Small
+small
+  font-size: $base-line * .75
+  color: grey-light
  
 
 // Set font for forms
@@ -48,7 +47,7 @@ input
 button
 select
 textarea
-  font-size: $font-size
+  font-size(14)
   font-weight: normal
   line-height: $base-line
 
@@ -87,11 +86,11 @@ input[type="color"]
   display: inline-block
   height: $base-line
   padding: 4px 6px
-  margin-bottom: $base-line / 2
-  font-size: $font-size
+  margin-bottom: ($base-line / 2)
+  font-size(14)
   line-height: $base-line
   color: $grey
-  // .border-radius(input-border-radius)
+  border-radius($input-border-radius)
   vertical-align: middle
 
 // Reset appearance properties for textual inputs and textarea
@@ -124,7 +123,7 @@ input[type="color"]
 .uneditable-input
   background-color: $input-background
   border: 1px solid $input-border
-  // .box-shadow(inset 0 1px 1px rgba(000.075))
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
   transition(border linear .2s box-shadow linear .2s)
 
   // Focus state
@@ -176,6 +175,11 @@ input[type="file"]:focus
 input[type="radio"]:focus
 input[type="checkbox"]:focus
   tab-focus()
+
+
+// Control group margin
+.control-group
+  margin-bottom: ($base-line/2)
 
 // Placeholder
 // -------------------------
