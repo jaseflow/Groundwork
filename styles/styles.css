@@ -1219,9 +1219,7 @@ input[type="color"],
 .uneditable-input {
   background-color: #fff;
   border: 1px solid #d9d9d9;
-  -webkit-box-shadow: inset;
-  -moz-box-shadow: inset;
-  box-shadow: inset;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
   -webkit-transition: border linear 0.2s box-shadow linear 0.2s;
   -moz-transition: border linear 0.2s box-shadow linear 0.2s;
   -ms-transition: border linear 0.2s box-shadow linear 0.2s;
@@ -1381,35 +1379,71 @@ input[type="checkbox"][readonly] {
 }
 .btn {
   display: inline-block;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  height: 2em;
-  line-height: 2em;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  margin-bottom: 0;
+  padding: 0.3846153846em 1.1538461538em;
+  background: #007ab8 -webkit-gradient(linear, left top, left bottom, color-stop(0, #009ceb), color-stop(1, #007ab8)) repeat-x;
+  background: #007ab8 -moz-linear-gradient(top, #009ceb 0%, #007ab8 100%) repeat-x;
+  background: #007ab8 -webkit-linear-gradient(top, #009ceb 0%, #007ab8 100%) repeat-x;
+  background: #007ab8 -o-linear-gradient(top, #009ceb 0%, #007ab8 100%) repeat-x;
+  background: #007ab8 -ms-linear-gradient(top, #009ceb 0%, #007ab8 100%) repeat-x;
+  background: #007ab8 linear-gradient(top, #009ceb 0%, #007ab8 100%) repeat-x;
+  -pie-background: linear-gradient(top, #009ceb 0%, #007ab8 color2 100%);
+  font-weight: 700;
+  line-height: 1.618em;
+  vertical-align: middle;
   text-align: center;
-  padding: 0 0.625em;
-  color: btn-color;
-  text-decoration: none;
-  cursor: pointer;
-  border: btn-border-width btn-border-style btn-border-color;
-  text-shadow: 0 0 1px rgba(255,255,255,0.3);
-}
-.btn-action {
   color: #fff;
-  border: 1px solid #00c;
+  cursor: pointer;
+  border: 1px solid transparent;
+  *border: 0;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.2);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-shadow: 0 0 1px rgba(0,0,0,0.3);
+  text-decoration: none;
 }
-.btn-action text-shadow: 001pxrgba(0:hover,
-.btn-action 0:hover,
-.btn-action 0:hover,
-.btn-action 0.4):hover {
-  color: #ff0;
+.btn:hover {
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
 }
-.btn-action [class*="icon"] {
-  margin-right: 20px;
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn.active,
+.btn:active {
+  background-color: #069;
+  background-image: none;
+  outline: 0;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.15), 0 1px 2px rgba(0,0,0,0.05);
+}
+.btn.disabled,
+.btn[disabled] {
+  cursor: default;
+  background-color: #e6e6e6;
+  background-image: none;
+  opacity: 65/100;
+  box-shadow: none;
+  color: #555;
+  text-shadow: none;
 }
 .btn-primary {
-  height: 3em;
-  line-height: 3em;
-  padding: 0 1.25em;
+  background: #209c13 -webkit-gradient(linear, left top, left bottom, color-stop(0, #2ac918), color-stop(1, #209c13)) repeat-x;
+  background: #209c13 -moz-linear-gradient(top, #2ac918 0%, #209c13 100%) repeat-x;
+  background: #209c13 -webkit-linear-gradient(top, #2ac918 0%, #209c13 100%) repeat-x;
+  background: #209c13 -o-linear-gradient(top, #2ac918 0%, #209c13 100%) repeat-x;
+  background: #209c13 -ms-linear-gradient(top, #2ac918 0%, #209c13 100%) repeat-x;
+  background: #209c13 linear-gradient(top, #2ac918 0%, #209c13 100%) repeat-x;
+  -pie-background: linear-gradient(top, #2ac918 0%, #209c13 color2 100%);
 }
 .btn-icons {
   background-color: rgba(0,0,0,0.5);

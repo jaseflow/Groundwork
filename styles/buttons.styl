@@ -1,39 +1,47 @@
 
 .btn
 	display: inline-block
-	// .ib()
-	// #gradient .vertical(btn-bg-top-color,btn-bg-btm-color)
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
-	font-weight: bold
-	height: 2em
-	line-height: 2em
+	ib()
+	font-size(13)
+	margin-bottom: 0
+	padding: 0.3846153846em 1.1538461538em; // 5px 15px
+	simple-gradient($btn-bg-color)
+	font-weight: $btn-weight
+	line-height: $base-line
+	vertical-align: middle
 	text-align: center
-	padding: 0 0.625em
-	color: btn-color
-	text-decoration: none
+	color: $btn-color
 	cursor: pointer
-	border: btn-border-width btn-border-style btn-border-color
-	// .box-shadow(btn-shadow-inner)
-	// .border-radius(btn-border-radius)
-	text-shadow: 0 0 1px rgba(255,255,255,0.3)
-
-.btn-action
-	color: white
-	// #gradient .vertical(blue,darken(blue,7)
-	border: 1px solid darken(blue,10)
-	// .box-shadow(inset 0 1px 1px lighten(blue,30))
-	text-shadow: 0 0 1px rgba(0,0,0,0.4)
-		&:hover
-			color: yellow
-
-.btn-action [class*="icon"]
-	margin-right: 20px
+	border: $btn-border-width $btn-border-style $btn-border-color
+	*border: 0 // Removes the border to prevent IE7's black border on input:focus
+	box-shadow: $btn-shadow-inner
+	border-radius($btn-border-radius)
+	text-shadow: 0 0 1px rgba(0,0,0,0.3)
+	text-decoration: none
+	&:hover
+		text-decoration: none
+		background-position: 0 -15px
+		transition(background-position .1s linear)
+	&:focus
+		tab-focus()
+	&.active
+	&:active
+		background-color: darken($btn-bg-color,10)
+		background-image: none
+		outline: 0
+		box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)
+	&.disabled
+	&[disabled]
+		cursor: default
+		background-color: darken($white,10)
+		background-image: none;
+		opacity(65)
+		box-shadow: none
+		color: $grey
+		text-shadow: none
 
 .btn-primary
-	// .font-size(20)
-	height: 3em
-	line-height: 3em
-	padding: 0 1.25em
+	simple-gradient($btn-primary-bg-color)
 
 // Button icons
 // -------------------------
