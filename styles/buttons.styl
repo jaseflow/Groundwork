@@ -1,10 +1,14 @@
 
+// Buttons
+// -------------------------
+
 .btn
 	display: inline-block
 	ib()
-	font-size(13)
+	font-size(14)
 	margin-bottom: 0
-	padding: 0.3846153846em 1.1538461538em; // 5px 15px
+	padding: 5px 15px
+	padding: 0.3125rem 0.9375rem // 5px 15px
 	simple-gradient($btn-bg-color)
 	font-weight: $btn-weight
 	line-height: $base-line
@@ -34,21 +38,37 @@
 	&[disabled]
 		cursor: default
 		background-color: darken($white,10)
-		background-image: none;
+		background-image: none
 		opacity(65)
 		box-shadow: none
 		color: $grey
 		text-shadow: none
 
-.btn-primary
-	simple-gradient($btn-primary-bg-color)
-
-// Button icons
+// Button colours
 // -------------------------
 
-.btn-icons
-	background-color: rgba(0,0,0,0.5)
-	display: inline-block
-	margin-right: 0.625em
-	line-height: 1
-	padding: 0.1875em
+.btn-secondary
+	simple-gradient($btn-secondary-bg-color)
+	color: $btn-secondary-color
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.4)
+
+.btn-success
+	simple-gradient($btn-success-bg-color)
+	color: $btn-success-color
+
+.btn-alert
+	simple-gradient($btn-alert-bg-color)
+	color: $btn-alert-color
+
+// Button sizes
+// -------------------------
+
+.btn-small
+	font-size(12)
+	padding: 3px 5px
+	padding: 0.1875rem 0.3125rem
+
+.btn-large
+	font-size()
+	padding: 10px 25px
+	padding: 0.625rem 1.5625rem
