@@ -1480,3 +1480,15 @@ input[type="checkbox"][readonly] {
   padding: 10px 25px;
   padding: 0.625rem 1.5625rem;
 }
+.module {
+  display: none;
+}
+.module.active {
+  display: block;
+}
+.module {
+  display: none;
+}
+.module.active {
+  display: block;
+}

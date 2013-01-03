@@ -1,14 +1,14 @@
 /*!
-* ProjectName ToggleActive
+* ProjectName ShowContent
 * @requires jQuery v1.7.2+
 *
-* Add '.toggle-active' to a <ul> to toggle active states on menu items.
+* Will reveal hidden modules using the href attribute to find the correct module to reveal
 *
 * @author Jason Corbett
 */
 ;(function($) {
 
-	window.ProjectName.ToggleActive = window.ProjectName.ToggleActive || window.ProjectName.BaseModule(function() {
+	window.ProjectName.ShowContent = window.ProjectName.ShowContent || window.ProjectName.BaseModule(function() {
 		
 		var $el;
 
@@ -21,9 +21,10 @@
 				$el.on('click', '.show-content', this.events.showContent);
 			},
 			events: {
-				toggleActive: function(e) {
+				showContent: function(e) {
 					e.preventDefault();
 					var selector = $(this).attr('href');
+					console.log(selector);
 					$el.find('.module.active').removeClass('active');
 					$el.find(selector).addClass('active')
 				}
