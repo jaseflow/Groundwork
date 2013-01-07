@@ -46,3 +46,68 @@ column(x, columns = columns)
 
 offset(offset = 1)
   margin-left: total-width*(((gutter-width+column-width)*offset + (gutter-width*0.5))/_gridsystem-width)
+
+
+// Grid Classes
+// -------------------------
+
+// Small screns
+
+.size1of4
+  column(3)
+
+.size2of4
+  column(6)
+
+.size3of4
+  column(9)
+
+.size4of4
+  column(12)
+
+// Medium Screens
+
+@media only screen and (min-width: 45em)
+  .size1of6
+    column(2)
+
+  .size2of6
+    column(3)
+
+  .size3of6
+    column(6)
+
+  .size4of6
+    column(10)
+
+  .size6of6
+    column(12)
+
+// Large Screens
+@media only screen and (min-width: 58.75em)
+  .size1of12
+    column(1)
+
+  .size2of12
+    column(2)
+
+  .size3of12
+    column(3)
+
+  .size4of12
+    column(4)
+
+  .size6of12
+    column(6)
+
+  .size8of12
+    column(8)
+
+  .size9of12
+    column(9)
+
+  .size10of12
+    column(10)
+
+  .size12of12
+    column(12)

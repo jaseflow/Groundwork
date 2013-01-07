@@ -1,8 +1,135 @@
-@import 'groundwork'
 
-// Add project stylesheets below
+// Colours
+// -------------------------
 
-.module
-  display: none
-  &.active
-    display: block
+// Greyscale
+
+$black = #000
+$grey-darker = #111
+$grey-dark =  #333
+$grey = #555
+$grey-light = #999
+$grey-lighter = #ddd
+$white = #fff
+
+// Accent
+
+$red = #ff0000
+$blue = #08c
+$yellow = #ffde00
+$orange = #ff7800
+$green = #2dda1b
+
+// Project colours
+
+$branding =  blue
+
+// Type stuff
+// -------------------------
+
+// Fonts
+
+$helvetica-neue = "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
+$helvetica = "Helvetica Neue", Helvetica, Arial, sans-serif
+$georgia = Georgia, Cambria, "Times New Roman", Times, serif
+$lucidia-grande = "Lucida Grande", Tahoma, Verdana, Arial, sans-serif
+$monospace = unquote("'Bitstream Vera Sans Mono', Consolas, Courier, monospace")
+$verdana = Verdana, Geneva, sans-serif
+
+// Font weights
+
+$xl-weight = 100
+$l-weight = 200
+$m-weight = 400
+$h-weight = 700
+
+// Type setting
+
+$font-size = 16px
+$base-line = 1.618em
+$base-font = $helvetica
+$base-weight = $l-weight
+$alt-font = $georgia          
+$base-color = $grey
+$alt-color = $branding
+$headings-font = inherit
+$headings-weight = $m-weight
+$headings-color = inherit
+
+// Links and placeholder text
+
+$link-color = $blue
+$link-color-hover = darken($link-color,5);
+
+$placeholderText = grey-light
+
+// Layout stuff
+// -------------------------
+
+$horizontal-components = 180px
+
+$push-distance = $base-line
+$island = 20px
+$islet = 10px
+
+// Responsive sizes
+
+$small = 37.5em
+$medium = 45em
+$large = 58.75em
+$larger = 78.75em
+
+// Base
+// -------------------------
+
+$site-bg = $white
+
+// Buttons
+// -------------------------
+
+$btn-bg-color = $blue
+$btn-border-width = 1px
+$btn-border-style = solid
+$btn-border-color = transparent
+$btn-color = $white
+$btn-shadow-inner = inset 0 1px 1px rgba(255,255,255,0.2)
+$btn-border-radius = 2px
+$btn-font = $helvetica
+$btn-weight = $h-weight
+
+$btn-secondary-bg-color = darken($white,10)
+$btn-secondary-color = $grey
+
+$btn-success-bg-color = darken($green,10)
+$btn-success-color = $white
+
+$btn-alert-bg-color = $red
+$btn-success-color = $white
+    
+// Forms
+// -------------------------
+
+$input-border-radius = 3px
+$input-background = $white
+$input-border = darken($white,15)
+$input-height = $line-height
+$input-disabled-background = darken($white,5%)
+
+// Imported stylesheets
+// -------------------------
+
+@import 'reset'
+@import 'base'
+@import 'type'
+@import 'font-awesome'
+@import 'grid'
+@import 'gradients'
+@import 'positions'
+@import 'abstractions'
+@import 'utility'
+@import 'responsive-utilities'
+@import 'forms'
+@import 'buttons'
+@import 'vendor'
+@import 'functionality'
+

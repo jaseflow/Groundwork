@@ -953,6 +953,172 @@ ul.icons li .icon-large:before {
 .icon-user-md:before {
   content: "\f200";
 }
+.size1of4 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 22.916666666666664%;
+  margin: 0 1.0416666666666665%;
+  *width: 22.916666666666664% -correction;
+  *margin: 0 1.0416666666666665% -correction;
+}
+.size2of4 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+  *width: 47.91666666666667% -correction;
+  *margin: 0 1.0416666666666665% -correction;
+}
+.size3of4 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 72.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  *width: 72.91666666666666% -correction;
+  *margin: 0 1.0416666666666665% -correction;
+}
+.size4of4 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  *width: 97.91666666666666% -correction;
+  *margin: 0 1.0416666666666665% -correction;
+}
+@media only screen and (min-width: 45em) {
+  .size1of6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 14.583333333333334%;
+    margin: 0 1.0416666666666665%;
+    *width: 14.583333333333334% -correction;
+    *margin: 0 1.0416666666666665% -correction;
+  }
+  .size2of6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 22.916666666666664%;
+    margin: 0 1.0416666666666665%;
+    *width: 22.916666666666664% -correction;
+    *margin: 0 1.0416666666666665% -correction;
+  }
+  .size3of6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 47.91666666666667%;
+    margin: 0 1.0416666666666665%;
+    *width: 47.91666666666667% -correction;
+    *margin: 0 1.0416666666666665% -correction;
+  }
+  .size4of6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 81.25%;
+    margin: 0 1.0416666666666665%;
+    *width: 81.25% -correction;
+    *margin: 0 1.0416666666666665% -correction;
+  }
+  .size6of6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+    *width: 97.91666666666666% -correction;
+    *margin: 0 1.0416666666666665% -correction;
+  }
+}
+@media only screen and (min-width: 58.75em) {
+  .size1of12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 6.25%;
+    margin: 0 1.0416666666666665%;
+    *width: 6.25% -correction;
+    *margin: 0 1.0416666666666665% -correction;
+  }
+  .size2of12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 14.583333333333334%;
+    margin: 0 1.0416666666666665%;
+    *width: 14.583333333333334% -correction;
+    *margin: 0 1.0416666666666665% -correction;
+  }
+  .size3of12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 22.916666666666664%;
+    margin: 0 1.0416666666666665%;
+    *width: 22.916666666666664% -correction;
+    *margin: 0 1.0416666666666665% -correction;
+  }
+  .size4of12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 31.25%;
+    margin: 0 1.0416666666666665%;
+    *width: 31.25% -correction;
+    *margin: 0 1.0416666666666665% -correction;
+  }
+  .size6of12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 47.91666666666667%;
+    margin: 0 1.0416666666666665%;
+    *width: 47.91666666666667% -correction;
+    *margin: 0 1.0416666666666665% -correction;
+  }
+  .size8of12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 64.58333333333334%;
+    margin: 0 1.0416666666666665%;
+    *width: 64.58333333333334% -correction;
+    *margin: 0 1.0416666666666665% -correction;
+  }
+  .size9of12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 72.91666666666666%;
+    margin: 0 1.0416666666666665%;
+    *width: 72.91666666666666% -correction;
+    *margin: 0 1.0416666666666665% -correction;
+  }
+  .size10of12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 81.25%;
+    margin: 0 1.0416666666666665%;
+    *width: 81.25% -correction;
+    *margin: 0 1.0416666666666665% -correction;
+  }
+  .size12of12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+    *width: 97.91666666666666% -correction;
+    *margin: 0 1.0416666666666665% -correction;
+  }
+}
 .island,
 .islet {
   display: block;
@@ -1479,12 +1645,6 @@ input[type="checkbox"][readonly] {
   font-size: 1rem;
   padding: 10px 25px;
   padding: 0.625rem 1.5625rem;
-}
-.module {
-  display: none;
-}
-.module.active {
-  display: block;
 }
 .module {
   display: none;
