@@ -1,0 +1,59 @@
+
+// Scaffolding
+// -------------------------
+
+* { .box-sizing(border-box) }
+
+html {
+	background: @site-bg; 
+	font-size: 100%;
+	-webkit-overflow-scrolling: touch; 
+	-webkit-tap-highlight-color: lighten(@base-color, 75%); 
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%;
+}
+
+body { 
+	margin : 0;
+	padding : 0;
+	width : 100%;
+	background-color : transparent;
+	font-family : @base-font;
+	.font-size(@font-size);
+	line-height : @line-height;
+	color : @base-color;
+}
+
+// Soft resets
+// -------------------------
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+table {
+	width: 100%;
+}
+
+// Removes the fluidness of images in Google Maps
+
+#googlemap img, object, embed { max-width: none; }
+
+#map_canvas embed { max-width: none; }
+
+#map_canvas img { max-width: none; }
+
+#map_canvas object { max-width: none; }
+
+// Links
+// -------------------------
+
+a {
+	color: @link-color;
+	text-decoration: none;
+	&:hover {
+		color: @link-color-hover;
+	}
+}
+
