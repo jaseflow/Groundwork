@@ -1,0 +1,112 @@
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family: @headings-font;
+	font-weight: @headings-weight;
+	color: @headings-color;
+	text-rendering: optimizelegibility;
+	margin: 0;
+}
+
+h1,
+.alpha {
+	.font-size(32);
+	margin-bottom: @line-height/2;
+	line-height: 1.2;
+}
+
+h2,
+.beta { 
+	margin-bottom: @line-height / 2;
+	.font-size(24);
+	line-height: 1.2;
+}
+
+h3,
+.charlie { 
+	margin-bottom: @line-height / 1.5;
+	.font-size(21);
+	line-height: 1.3; 
+}
+
+h4,
+.delta { 
+	margin-bottom: @line-height;
+	.font-size(18);
+	line-height: 1.25;
+}
+
+h5,
+.echo { 
+	.font-size(16);
+	margin-bottom: @line-height;
+}
+
+h6,
+.milli { 
+	margin-bottom: @line-height;
+	.font-size(14); 
+}
+
+// $Body text
+
+p,
+ul,
+ol,
+table,
+form { margin-bottom: @base-line }
+
+// !imporant is fine here, these styles are boolean
+
+.flat { margin-bottom: 0 !important }
+.pressed { margin-bottom: @base-line/2 !important}
+
+// $Alignment
+
+.text-left { text-align: left }
+.text-right { text-align: right }
+.text-center { text-align: center }
+
+// $Weights
+
+b,
+strong { font-weight: bold }
+
+.subheading { font-weight: 200 }
+
+// $Block type
+
+p, 
+ol, 
+ul, 
+address { 
+	margin-bottom: @base-line; 
+}
+
+small { 
+	font-size: 0.4em;
+}
+
+// $Lists
+
+ul, 
+ol { 
+	margin: 0 0 @base-line @base-line; 
+}
+
+li ul, 
+li ol { 
+	margin: 0;
+}
+
+ul {
+	list-style: square;
+}
+
+.unstyled {
+	margin-left: 0;
+	list-style: none;
+}

@@ -1,0 +1,115 @@
+
+// Harry Roberts blocked off content
+// -------------------------
+// http://csswizardry.com/2012/04/the-single-responsibility-principle-applied-to-css/
+// -------------------------
+
+.island,
+.islet {
+	display: block;
+}
+
+.island {
+	padding: 20px !important;
+}
+
+.islet {
+	padding: 10px !important;
+}
+
+.island:last-child,
+.islet:last-child {
+	margin-bottom: 0;
+}
+
+// Nicole Sullivan Media Block
+// -------------------------
+// http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+
+
+.media {
+	display: block;
+}
+
+.media-img {
+	float: left;
+	margin-right: 1.25em;
+}
+
+.media-img-rev {
+	float: right;
+	margin-left: 1.25em;
+}
+
+.media-img img {
+	display: block;
+}
+
+.media-body {
+	overflow: hidden;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+// Smaller right margins for media thumbs inside islets
+
+.islet .media-img {
+	margin-right: 5px;
+}
+
+.islet .media-img-rev {
+	margin-right: 5px;
+}
+
+// Nav abstractions
+// -------------------------
+// http://jsfiddle.net/csswizardry/ySYqD/
+
+// Horizontal 
+
+.nav {
+	list-style: none;
+	margin-left: 0;
+}
+
+.nav li {
+	float: left;
+}
+
+.nav a {
+	display: inline-block;
+	.ib();
+}
+
+// Vertical
+
+.stacked li {
+	float: none;
+	display: list-item;
+}
+
+.stacked a {
+	display: block;
+}
+
+// Flyout content on hover
+// -------------------------
+// http://jsfiddle.net/csswizardry/Zj4eb/
+
+.flyout {
+	position: relative;
+}
+
+.flyout-content {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+
+.flyout:hover {
+	.flyout-content {
+		display: block;
+	}
+}
