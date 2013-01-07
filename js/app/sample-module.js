@@ -6,11 +6,12 @@
 * 
 * @author ...
 */
-!(function($) {
+;(function($) {
 
 	window.ProjectName.SampleModule = window.ProjectName.SampleModule || window.ProjectName.BaseModule(function() {
 		
 		var $el;
+		var _this
 
 		return {
 			init: function() {
