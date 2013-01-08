@@ -319,6 +319,9 @@ h6,
   font-size: 14px;
   font-size: 0.875rem;
 }
+.double-liner {
+  line-height: 1.2;
+}
 p,
 ul,
 ol,
