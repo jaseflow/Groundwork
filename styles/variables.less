@@ -28,11 +28,27 @@
 // Type stuff
 // -------------------------
 
+// Fonts
+
+@helvetica-neue:            "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+@helvetica:                  Helvetica, Arial, sans-serif;
+@georgia:                    Georgia, Cambria, "Times New Roman", Times, serif;
+@lucidia-grande:             "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+@monospace:                  unquote("'Bitstream Vera Sans Mono', Consolas, Courier, monospace");
+@verdana:                    Verdana, Geneva, sans-serif;
+
+// Font weights
+
+@xl-weight:                  100;
+@l-weight:                   200;
+@m-weight:                   400;
+@h-weight:                   700;
+
 @font-size:                  13;
 @line-height:                1.6875em;
-@base-font:                  'Helvetica Neue', Helvetica, arial, sans-serif;
+@base-font:                  @helvetica-neue;
 @base-weight:                300;
-@alt-font:                   Cambria, Georgia, Times, 'Times New Roman';          
+@alt-font:                   @georgia; 
 @base-color:                 @grey-light;
 @alt-color:                  @orange;
 @headings-font:              inherit;
@@ -47,7 +63,7 @@
 // -------------------------
 
 
-@base-line:  		 		 @line-height;
+@base-line:  		 		         @line-height;
 @horizontal-components:      180px;
 
 // Responsive stuff
@@ -65,19 +81,28 @@
 // Buttons
 // -------------------------
 
-@btn-bg-top-color:           darken(@white,5);
-@btn-bg-btm-color:           darken(@btn-bg-top-color,5);
-@btn-border-color:           darken(@btn-bg-top-color,10);
+@btn-bg-color:               @branding;
+@btn-border-color:           darken(@btn-bg-color,10);
 @btn-border-width:           1px;
 @btn-border-style:           solid;
-@btn-color:                  @grey;
+@btn-color:                  @white;
+@btn-weight:                 @l-weight;
 @btn-shadow-inner:           inset 0 1px 1px rgba(255,255,255,0.8);
 @btn-border-radius:          2px;
+
+@btn-secondary-bg-color:     darken(@white,10);
+@btn-secondary-color:        @grey;
+
+@btn-success-bg-color:       darken(@green,10);
+@btn-success-color:          @white;
+
+@btn-alert-bg-color:         @red;
+@btn-alert-color:            @white;
 
 // Forms
 // -------------------------
 
-@placeholderText:            @grey-light;
+@placeholder-text:           @grey-light;
 @input-border-radius:        3px;
 @input-background:           @white;
 @input-border:               darken(@white,15);

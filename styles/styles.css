@@ -153,11 +153,7 @@ html {
   -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: transparent;
-  font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
+  font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-size: 0.8125rem;
   line-height: 1.6875em;
@@ -479,7 +475,8 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 1.6875em;
-  font-size: 19.5;
+  font-size: 19.5px;
+  font-size: 1.21875rem;
   line-height: 3.375em;
   color: #333333;
   border: 0;
@@ -494,7 +491,8 @@ input,
 button,
 select,
 textarea {
-  font-size: 13;
+  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: normal;
   line-height: 1.6875em;
 }
@@ -502,7 +500,7 @@ input,
 button,
 select,
 textarea {
-  font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
+  font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 }
 label {
   display: block;
@@ -529,7 +527,8 @@ input[type="color"],
   height: 1.6875em;
   padding: 4px 6px;
   margin-bottom: 0.84375em;
-  font-size: 13;
+  font-size: 13px;
+  font-size: 0.8125rem;
   line-height: 1.6875em;
   color: #555555;
   -webkit-border-radius: 3px;
@@ -623,13 +622,11 @@ input[type="checkbox"] {
 }
 select,
 input[type="file"] {
-  height: 11.6875em;
-  /* In IE7, the height of the select element cannot be changed by height, only font-size */
-
+  height: 1.6875em;
   *margin-top: 4px;
   /* For IE7, add top margin to align select with labels */
 
-  line-height: 11.6875em;
+  line-height: 1.6875em;
 }
 select {
   width: 220px;
@@ -788,7 +785,8 @@ input[type="checkbox"][readonly] {
 .input-prepend .uneditable-input,
 .input-append .dropdown-menu,
 .input-prepend .dropdown-menu {
-  font-size: 13;
+  font-size: 13px;
+  font-size: 0.8125rem;
 }
 .input-append input,
 .input-prepend input,
@@ -822,7 +820,8 @@ input[type="checkbox"][readonly] {
   height: 1.6875em;
   min-width: 16px;
   padding: 4px 5px;
-  font-size: 13;
+  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: normal;
   line-height: 1.6875em;
   text-align: center;
@@ -1105,27 +1104,20 @@ legend + .control-group {
   display: inline-block;
   *display: inline;
   zoom: 1;
-  background-color: #ededed;
-  background-image: -moz-linear-gradient(top, #f2f2f2, #e5e5e5);
-  background-image: -ms-linear-gradient(top, #f2f2f2, #e5e5e5);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#e5e5e5));
-  background-image: -webkit-linear-gradient(top, #f2f2f2, #e5e5e5);
-  background-image: -o-linear-gradient(top, #f2f2f2, #e5e5e5);
-  background-image: linear-gradient(top, #f2f2f2, #e5e5e5);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#e5e5e5', GradientType=0);
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  height: 2em;
-  line-height: 2em;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  padding: 5px 15px;
+  padding: 0.3125rem 0.9375rem;
+  background-color: #0088cc;
+  font-weight: 200;
+  line-height: 1.6875em;
+  vertical-align: middle;
   text-align: center;
-  padding: 0 0.625em;
-  color: #555555;
-  text-decoration: none;
+  color: #ffffff;
   cursor: pointer;
-  border: 1px solid #d9d9d9;
-  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8);
-  -moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8);
+  border: 1px solid #006699;
+  *border: 0;
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8);
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -1133,44 +1125,66 @@ legend + .control-group {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
 }
-.btn-action {
+.btn:hover {
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
   color: #ffffff;
-  background-color: #007ebe;
-  background-image: -moz-linear-gradient(top, #0088cc, #0070a8);
-  background-image: -ms-linear-gradient(top, #0088cc, #0070a8);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0070a8));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0070a8);
-  background-image: -o-linear-gradient(top, #0088cc, #0070a8);
-  background-image: linear-gradient(top, #0088cc, #0070a8);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0070a8', GradientType=0);
-  border: 1px solid #006699;
-  -webkit-box-shadow: inset 0 1px 1px #66ccff;
-  -moz-box-shadow: inset 0 1px 1px #66ccff;
-  box-shadow: inset 0 1px 1px #66ccff;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
 }
-.btn-action:hover {
-  color: #ffde00;
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
-.btn-action [class*="icon"] {
-  margin-right: 20px;
+.btn.active,
+.btn:active {
+  background-color: #006699;
+  background-image: none;
+  outline: 0;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
-.btn-primary {
-  font-size: 20px;
-  font-size: 1.25rem;
-  height: 3em;
-  line-height: 3em;
-  padding: 0 1.25em;
+.btn.disabled,
+.btn[disabled] {
+  cursor: default;
+  background-color: #e6e6e6;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  box-shadow: none;
+  color: #555555;
+  text-shadow: none;
 }
-.btn-icons {
-  background-color: rgba(0, 0, 0, 0.5);
-  display: inline-block;
-  margin-right: 0.625em;
-  line-height: 1;
-  padding: 0.1875em;
+.btn-secondary {
+  background-color: #e6e6e6;
+  color: #555555;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+}
+.btn-success {
+  background-color: #24ad15;
+  color: #ffffff;
+}
+.btn-alert {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+.btn-small {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  padding: 3px 5px;
+  padding: 0.1875rem 0.3125rem;
+}
+.btn-large {
+  font-size: 19.5px;
+  font-size: 1.21875rem;
+  padding: 10px 25px;
+  padding: 0.625rem 1.5625rem;
 }
 /*  Font Awesome 3.0
     the iconic font designed for use with Twitter Bootstrap
