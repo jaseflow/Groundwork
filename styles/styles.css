@@ -367,6 +367,9 @@ li ol {
 ul {
   list-style: square;
 }
+ol {
+  list-style: decimal;
+}
 .unstyled {
   margin-left: 0;
   list-style: none;
